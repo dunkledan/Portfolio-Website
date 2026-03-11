@@ -1,0 +1,36 @@
+body
+{
+    background-repeat:no-repeat;
+    background-image:linear-gradient(45deg,rgb(40, 32, 104) 0%, #002747 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1
+{
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.topBand
+{
+    position: static;
+    overflow:hidden;
+    height: 5%;
+    background-color: black;
+    opacity: 50%;    
+}
+
+.someImage
+{
+    position: relative;
+    left:20%;
+}
+
+.introParagraph
+{
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
