@@ -33,12 +33,12 @@ h1
 .bgImage
 {
     position: relative;
-    
+    max-width:300px;
+    height: 200px;
 }
 
 .introParagraph
 {
-
     font-size:5ch;
     color:white;
 }
