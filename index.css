@@ -17,7 +17,7 @@ h1
 
 .topBarButtons
 {
-    padding-left: 20%;
+    padding-left: 10%;
     display: inline-flex;
     justify-content: center;
 }
@@ -36,7 +36,7 @@ button
 .topbandButtonSpacing
 {
     transform: translateY(25%);
-    padding-left: 30%;
+    padding-left: 20%;
 }
 
 .topBand
@@ -82,3 +82,22 @@ button
     color:white;
 }
 
+.TechSkillsTitle
+{
+    font-size:5ch;
+    color:white;
+}
+
+.TechSkillsParagraph
+{
+    font-size:3ch;
+    color:white;
+}
+
+button:hover
+{
+    transition-duration: 300ms;
+    opacity: 100%;
+    color:white;
+    background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
+}
