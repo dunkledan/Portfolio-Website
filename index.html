@@ -4,27 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class = topBand>
-        <div class = centre>
-            <h1>TITLE HERE</h1>
-        </div>
-    </div>
+    <section id = "WelcomePage">
+        <div class = topBand>
+            <div class = topBandOpacity>
+                <h1>Daniel Lawrence</h1>
+                <div class = topBarButtons>
+                    
+                    <div class = topbandButtonSpacing>
+                        <button onclick = "goToAboutMe()">About Me</button>
+                    </div>
 
-    <div class = bgImage>
-        <div class = centre>
-            <div class = bgImageContainer>
-                <img src = "banner.webp">
+                    <div class = topbandButtonSpacing>
+                        <button>Technical Skills</button>
+                    </div>
+
+                    <div class = topbandButtonSpacing>
+                        <button>Projects</button>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class = centre>
-        <div class = introParagraph>
-            <p>hello this will be a parahgraph</p>
+
+        <div class = bgImage>
+            <div class = centre>
+                <div class = bgImageContainer>
+                    <img src = "banner.webp">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id = "AboutMe">
+        <div class = centre>
+
+            <div class = aboutMeTitle>
+                <h3>About Me</h3>
+            </div>
+        </div>
+        <div class = centre>
+
+            <div class = introParagraph>
+                <p>about me paragraph will go herer</p>
+            </div>
+
+        </div>
+    </section>
+
+
 </body>
 </html>

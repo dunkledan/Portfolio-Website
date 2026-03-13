@@ -8,19 +8,46 @@ body
 
 h1
 {
+    display: inline;
     color:white;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif ;
+    padding-left: 10%;
+    max-width: 20%;
+}
+
+.topBarButtons
+{
+    padding-left: 20%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+button
+{
+    border-color: grey;
+    border-radius: 10px;
+    color: white;
+    background:none ;
+    font-size: 20px;
+    transform: translateY(-20%);
+    cursor: pointer;
+}
+
+.topbandButtonSpacing
+{
+    transform: translateY(25%);
+    padding-left: 30%;
 }
 
 .topBand
 {
+    z-index: 1;
     font-size:3ch;
     position: static;
     overflow:hidden;
     height: 5%;
-    background-color: black;
-    opacity: 50%;    
+    background-color: #001a30;
+    max-height: 5%;
 }
 
 .centre
@@ -40,12 +67,18 @@ h1
 .bgImage img
 {
     width: 100%;
-    height: 300px;
+    height: 200%;
+}
+
+.aboutMeTitle
+{
+    font-size:5ch;
+    color:white;
 }
 
 .introParagraph
 {
-    font-size:5ch;
+    font-size:3ch;
     color:white;
 }
 
