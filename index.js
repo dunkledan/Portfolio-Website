@@ -22,3 +22,8 @@ function DisplayContacts()
 {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+function goToContactMe()
+{
+    document.getElementById("contctMe").scrollIntoView({behavior:"smooth"})
+}

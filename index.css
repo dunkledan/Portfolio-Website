@@ -1,7 +1,7 @@
 body
 {
     background-repeat:no-repeat;
-    background-image:linear-gradient(45deg,rgb(40, 32, 104) 0%, #002747 100%);
+    background-image:linear-gradient(45deg,rgb(27, 21, 70) 0%, #0d2a42 100%);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -62,6 +62,8 @@ button
     position: relative;
     width: 100%;
     height: 10%;
+    background-color: #384957;
+    opacity: 80%;
 }
 
 .bgImage img
@@ -100,4 +102,26 @@ button:hover
     opacity: 100%;
     color:white;
     background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
+}
+
+.logo img
+{
+    display: inline-block;
+    width: 3ch;
+}
+
+.logo2 img
+{
+    display: inline-block;
+    width: 3ch;
+}
+
+.textImageInline
+{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:red;
 }
