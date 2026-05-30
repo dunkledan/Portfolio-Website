@@ -8,24 +8,108 @@
     <script src="index.js"></script>
 </head>
 <body>
-    
+
 <section id = "menu">
 
     <div class = centre>
         <h1>MENU</h1>
     </div>
+    <div class = centre>
         <div class = buttonPadding>
-            <button>Project 1</button>
+            <button onclick = "GoToSection('Project1')" class = "menuButton">Project 1</button>
         </div>  
         <div class = buttonPadding>  
-            <button>Project 2</button>
+            <button class = "menuButton">Project 2</button>
         </div>
         <div class = buttonPadding>  
-            <button>Project 3</button>
+            <button class = "menuButton">Project 3</button>
         </div>
-        <div class = homeButton>  
-            <button onclick = "GoToHome()">🏠Back</button>
+        <div class = buttonPadding>  
+            <button class = "menuButton">Project 4</button>
         </div>
+    </div>
+    <button onclick = "GoToHome()" class = "homeButton">Back</button>
+
+</section>
+
+<section id = "Project1">
+    <div class = "centre">
+        <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
+            <button class = "Project1Title">ESCAPE THE LABRYNTH</button>
+        </a>
+    </div>
+    <div class = "videoContainer">
+        <iframe
+            width="500"
+            height="300"
+            src="https://www.youtube.com/embed/8YYvQCG4YGA?autoplay=1&mute=1&loop=1&playlist=8YYvQCG4YGA"
+            title="Gameplay Demo"
+            allow="autoplay; encrypted-media"
+            loop="true"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class = "centre">
+        <div class = "DescriptionParaTitle">
+            About
+        </div>
+    </div>
+    <div class = "centre">
+        <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
+    </div>
+
+    <div class = "centre">
+        <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown')">Core Mechanics</button>
+    </div>
+    <div id = "MechanicsDropDown">
+        <div class = "centre">
+            <h3>ShapeShifting</h3>
+        </div>
+        <div class = "centre">
+            <h3>Shooting</h3>
+        </div>
+        <div class = "centre">
+            <h3>Moving Tiles</h3>
+        </div>
+        <div class = "centre">
+            <h3>climbing</h3>
+        </div>
+        <div class = "centre">
+            <h3>Moving Tiles</h3>
+        </div>
+        <div class = "centre">
+            <h3>Enemy AI</h3>
+        </div>
+        <div class = "centre">
+            <h3>Procedural Generation</h3>
+        </div>
+    </div>
+
+
+</section>
+
+
+<ul>git hub page</ul>
+<ul>demo video</ul>
+<ul>essentially forum post of cool bits that were made with it, using openable list thingy with sections</ul>
+<ul>description of the game</ul>
+
+
+<section id = "Project2">
+
+</section>
+
+
+
+
+<section id = "Project3">
+
+</section>
+
+
+
+
+<section id = "Project4">
 
 </section>
 

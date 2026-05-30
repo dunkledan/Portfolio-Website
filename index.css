@@ -1,9 +1,10 @@
 body
 {
     background-repeat:no-repeat;
-    background-image:linear-gradient(45deg,rgb(27, 21, 70) 0%, #0d2a42 100%);
     background-attachment: fixed;
     background-size: cover;
+    background-image:linear-gradient(45deg,rgb(27, 21, 70) 0%, #122c41 100%);
+    overflow-x: hidden;
 }
 
 h1
@@ -29,31 +30,39 @@ button
     color: white;
     background:none ;
     font-size: 20px;
-    transform: translateY(-20%);
     cursor: pointer;
 }
 
 .topbandButtonSpacing
 {
-    transform: translateY(25%);
     padding-left: 20%;
 }
 
 .topBand
 {
-    z-index: 1;
-    font-size:3ch;
-    position: static;
-    overflow:hidden;
-    height: 5%;
-    background-color: #001a30;
-    max-height: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    font-size: 3ch;
+    background-image:linear-gradient(130deg,#001a30 0%, #000f1b 100%);
+    z-index: 1000;
+    padding: 20px;
 }
 
 .centre
 {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.left
+{
+    padding-left: 1%;
+    display: block;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -72,16 +81,27 @@ button
     height: 200%;
 }
 
-.aboutMeTitle
-{
-    font-size:5ch;
-    color:white;
-}
-
 .introParagraph
 {
     font-size:3ch;
     color:white;
+}
+
+.TechSkillsContainer
+{
+    background-image:linear-gradient(130deg,#1e2d6d 0%, #341E4F 100%);
+    border: 2px solid white;
+    border-radius: 120px;
+    padding: 20px;
+    margin: 30px 60px 30px auto;
+    max-width: 30%;
+    min-height: 400px;
+    color: white;
+}
+
+.TechSkillsContainer:hover
+{
+    transform: scale(1.1);
 }
 
 .TechSkillsTitle
@@ -102,26 +122,138 @@ button:hover
     opacity: 100%;
     color:white;
     background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
-}
-
-.logo img
-{
-    display: inline-block;
-    width: 3ch;
-}
-
-.logo2 img
-{
-    display: inline-block;
-    width: 3ch;
+    transform: scale(1.1);
 }
 
 .textImageInline
 {
-    width: 20%;
-    height: 100px;
+    border-radius: 120px;
     display: flex;
+    justify-content: center;
+    background-color:#341a72;
+    padding: 1%;
+    width: auto;
     align-items: center;
-    gap: 10px;
-    background-color:red;
+}
+
+.textImageInline:hover
+{
+    transform: scale(1.1);
+}
+
+.video-container 
+{
+    margin-top: 100px;
+    padding: 1%;
+    background-color: #1a486b;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.video-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    will-change: transform;
+}
+
+iframe 
+{
+    flex-shrink: 0;
+}
+
+iframe:hover
+{
+    transform: scale(1.1);
+}
+
+.logo:hover 
+{
+    transform: scale(1.3);
+}
+
+.portrait:hover 
+{
+    transform: scale(1.05);
+}
+
+:root {
+    --panel-width: 320px;
+}
+
+.portrait {
+    width: var(--panel-width);
+}
+
+.portrait img {
+    border-radius: 120px;
+    min-height: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.portraitPanel {
+    border-radius: 100px;
+    width: min(320px, 40vw);
+}
+
+.portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#aboutMe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.aboutMeText {
+    background-image:linear-gradient(130deg,#1b2968 0%, #341E4F 100%);
+    border: 2px solid white;
+    border-radius: 120px;
+    padding: 40px;
+    width: min(600px, 40vw);
+    color: white;
+    font-size: 3ch;
+    max-width: 600px;
+    min-height: 300px;
+}
+
+.aboutMeText h3 {
+    font-size: 5ch;
+    margin-bottom: 10px;
+}
+
+.aboutMeText:hover
+{
+    transform: scale(1.05);
+}
+
+button
+{
+    background-image:linear-gradient(130deg,#1e2d6d 0%, #341E4F 100%);
+    min-height: 60px;
 }

@@ -1,6 +1,6 @@
 function goToAboutMe()
 {
-    document.getElementById("AboutMe").scrollIntoView({behavior:"smooth"})
+    document.getElementById("aboutMe").scrollIntoView({behavior:"smooth"})
 }
 
 function goToTechSkills()
@@ -18,12 +18,48 @@ function GoToHome()
     location.replace("/index.html");
 }
 
-function DisplayContacts()
+function GoToSection(section)
 {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById(section).scrollIntoView({behavior:"smooth"});
 }
 
-function goToContactMe()
+const track = document.querySelector('.video-track');
+let x = 0;
+const SPEED = 80;
+let lastTime = null;
+function autoScroll(time) 
 {
-    document.getElementById("contctMe").scrollIntoView({behavior:"smooth"})
+    if (!lastTime) 
+    {
+        lastTime = time;
+    }
+
+    const deltaTime = (time - lastTime) / 1000;
+    lastTime = time;
+    x -= SPEED * deltaTime;
+    track.style.transform = `translateX(${x}px)`;
+
+    if (Math.abs(x) >= track.scrollWidth / 2) 
+    {
+        x = 0;
+    }
+    requestAnimationFrame(autoScroll);
 }
+requestAnimationFrame(autoScroll);
+
+
+function ToggleDropDown(dropdownMenu)
+{
+    if(document.getElementById(dropdownMenu).style.display != 'flex')
+    {
+        document.getElementById(dropdownMenu).style.display = 'flex';
+        document.getElementById(dropdownMenu).scrollIntoView({behavior:"smooth"});
+    }
+    else
+    {
+        document.getElementById(dropdownMenu).style.display = 'none';
+    }
+}
+
+
+

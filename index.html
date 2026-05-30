@@ -4,103 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-    <title>Document</title>
+    <script src="index.js" defer></script>
+    <title>Home</title>
 </head>
-<body>
-    <section id = "WelcomePage">
-        <div class = topBand>
-            <div class = topBandOpacity>
-                <h1>Daniel Lawrence</h1>
-                <div class = topBarButtons>
+    <body>
+        <section id = "WelcomePage">
+            <div class = "topBand">
+                <div class = topBandOpacity>
+                    <h1>Daniel Lawrence</h1>
+                    <div class = topBarButtons>
+                        
+                        <div class = topbandButtonSpacing>
+                            <button onclick = "goToAboutMe()">About Me</button>
+                        </div>
+
+                        <div class = topbandButtonSpacing>
+                            <button onclick = "goToTechSkills()">Technical Skills</button>
+                        </div>
+
+                        <div class = topbandButtonSpacing>
+                            <button onclick = "goToProjects()">Projects</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "GameplayVideos">
+            <div class = video-container>
+                <div class = video-track>
                     
-                    <div class = topbandButtonSpacing>
-                        <button onclick = "goToAboutMe()">About Me</button>
-                    </div>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/Arcl2Ql2c68?autoplay=1&mute=1&loop=1&playlist=Arcl2Ql2c68"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/-WCQr_2sUW0?autoplay=1&mute=1&loop=1&playlist=-WCQr_2sUW0"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/eJyEBcNtznY?autoplay=1&mute=1&loop=1&playlist=eJyEBcNtznY"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/8YYvQCG4YGA?autoplay=1&mute=1&loop=1&playlist=8YYvQCG4YGA"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
 
-                    <div class = topbandButtonSpacing>
-                        <button onclick = "goToTechSkills()">Technical Skills</button>
-                    </div>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/Arcl2Ql2c68?autoplay=1&mute=1&loop=1&playlist=Arcl2Ql2c68"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/-WCQr_2sUW0?autoplay=1&mute=1&loop=1&playlist=-WCQr_2sUW0"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/eJyEBcNtznY?autoplay=1&mute=1&loop=1&playlist=eJyEBcNtznY"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/8YYvQCG4YGA?autoplay=1&mute=1&loop=1&playlist=8YYvQCG4YGA"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+                
+                </div>
+            </div>
+        </section>
 
-                    <div class = topbandButtonSpacing>
-                        <button onclick = "goToProjects()">Projects</button>
+        <section id = "aboutMe">
+            <div class = "portraitPanel">
+                <div class = "left">
+                    <div class = "portrait">
+                        <img src = "mePhoto.jpg">
                     </div>
+                </div>
+                <div class = left>
+                    <div class = "textImageInline">
 
-                    <div class = topbandButtonSpacing>
-                        <button onclick = "goToContactMe()">Contact me</button>
+                        <div class = "logo">
+                            <a href = "https://www.linkedin.com/in/daniel-lawrence-625a4b359/" target="_blank">
+                                <img src = "LinkInLogo.png">
+                            </a>
+                        </div>
+
+                        <div class = "logo">
+                            <a href = "https://github.com/dunkledan" target="_blank">
+                                <img src = "githublogo.png">
+                            </a>
+                        </div>
+
+                        <div class = "logo">
+                            <a href = "mailto:dunkledan@outlook.com?subject=Portfolio%20Contact" target="_blank">
+                                <img src = "outlookLogo.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id = "GameplayVideos">
-        <div class = bgImageContainer>
-            <div class = centre>
-                <video width="500" height="300" autoplay controls loop>
-                    <source src="Videos.zip/cDemoWeb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video width="500" height="300" autoplay controls loop>
-                    <source src="Videos.zip/MPDemo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video width="500" height="300" controls autoplay loop>
-                    <source src="MPDemo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <section id = "AboutMe">
-        <div class = centre>
-            <div class = aboutMeTitle>
+            <div class="aboutMeText">
                 <h3>About Me</h3>
+                <p>about me paragraph will go here about me paragraph will go here about me paragraph will go here about me paragraph will go here about me paragraph will go here about me paragraph will go here about me paragraph will go here </p>
             </div>
-        </div>
-        <div class = centre>
-            <div class = introParagraph>
-                <p>about me paragraph will go herer</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id = "technicalSkills">
-        <div class = centre>
-            <div class = TechSkillsTitle>
-                <h3>tech skills</h3>
-            </div>
-        </div>
-        <div class = centre>
-            <div class = TechSkillsParagraph>
-                <p>tech skills paragraph will go herer</p>
-            </div>
-        </div>
-    </section>
 
-    <section id = "contctMe">
-        <div class = centre>
 
-            <div class = "textImageInline">
-                <p>Linked In: </p>
-                <div class = "logo2">
-                    <img src = "LinkInLogo.png">
+
+            <div class = "TechSkillsContainer">
+                <div class = TechSkillsTitle>
+                    <h3>tech skills</h3>
+                </div>
+                <div class = TechSkillsParagraph>
+                    <p>tech skills paragraph will go here tech skills paragraph will go here tech skills paragraph will go here tech skills paragraph will go here tech skills paragraph will go here tech skills paragraph will go here </p>
                 </div>
             </div>
-            
-            <div class = "textImageInline">
-                <p>Current Business email: </p>
-                <div class = "logo">
-                    <img src = "outlookLogo.png">
-                </div>
-            </div>
-
-        </div>
+        </section>
         
 
-    </section>
+
+        <section id = "technicalSkills">
+        </section>
 
 
-</body>
+
+    </body>
 </html>
