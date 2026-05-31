@@ -20,7 +20,11 @@ function GoToHome()
 
 function GoToSection(section)
 {
-    document.getElementById(section).scrollIntoView({behavior:"smooth"});
+    const element = document.getElementById(section);
+    const offset = 250; 
+    const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    window.scrollTo({ top: y,  behavior: "smooth" });
 }
 
 const track = document.querySelector('.video-track');
@@ -53,11 +57,12 @@ function ToggleDropDown(dropdownMenu)
     if(document.getElementById(dropdownMenu).style.display != 'inline-block')
     {
         document.getElementById(dropdownMenu).style.display = 'inline-block';
-        document.getElementById(dropdownMenu).scrollIntoView({behavior:"smooth"});
+        GoToSection(dropdownMenu);
     }
     else
     {
         document.getElementById(dropdownMenu).style.display = 'none';
+        GoToSection(dropdownMenu);
     }
 }
 

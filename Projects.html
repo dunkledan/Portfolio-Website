@@ -17,16 +17,16 @@
                         <button onclick = "GoToHome()" class = "homeButton">Back</button>
                     </div>
                     <div class = buttonPadding>
-                        <button onclick = "GoToSection('Project1')" class = "menuButton">Project 1</button>
+                        <button onclick = "GoToSection('Project1')" class = "menuButton">Escape The Labrynth</button>
                     </div>
                     <div class = buttonPadding>  
-                        <button class = "menuButton">Project 2</button>
+                        <button onclick = "GoToSection('Project2')" class = "menuButton">Military Defence</button>
                     </div>
                     <div class = buttonPadding>  
-                        <button class = "menuButton">Project 3</button>
+                        <button onclick = "GoToSection('Project3')" class = "menuButton">Orbit Simulation</button>
                     </div>
-                    <div class = buttonPadding>  
-                        <button class = "menuButton">Project 4</button>
+                    <div onclick = "GoToSection('Project4')" class = buttonPadding>  
+                        <button class = "menuButton">Scroll To The Moon</button>
                     </div>
                 </div>
             </div>
@@ -43,9 +43,14 @@
 
         <section id = "Project1">
             <div class = "centre">
-                <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
-                    <button class = "Project1Title">ESCAPE THE LABRYNTH</button>
-                </a>
+                    <div class = "logo">
+                        <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
+                            <img src = "githublogo.png">
+                        </a>
+                    </div>
+                        <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
+                            <button class = "Project1Title">ESCAPE THE LABRYNTH</button>
+                        </a>
             </div>
             <div class = "videoContainer">
                 <iframe
@@ -68,14 +73,16 @@
             </div>
 
             <div class = "centre">
-                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown')">Core Mechanics</button>
+                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown1')">Core Mechanics</button>
             </div>
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown">
-                    <div>
-                        <button onclick="ToggleDropDown('ShapeShiftDropDown')">ShapeShifting</button>
+                <div id = "MechanicsDropDown1">
+                    <div class = centre> 
+                        <button onclick="ToggleDropDown('ShapeShiftDropDown')" class = "DropdownSubButton">Shapeshifting</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "ShapeShiftDropDown">
                                     <div>Mechanic Image/Video here</div>
@@ -84,8 +91,11 @@
                             </div>
                         </div>
                     </div>
-                        <div>
-                        <button onclick="ToggleDropDown('ShootingDropDown')">Shooting</button>
+
+                    <div class = centre>
+                        <button onclick="ToggleDropDown('ShootingDropDown')" class = "DropdownSubButton">Shooting</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "ShootingDropDown">
                                     <div>Mechanic Image/Video here</div>
@@ -93,80 +103,227 @@
                                     <div>code snippet if required</div>
                             </div>
                         </div>
-                        </div>
-                        <div>
-                        <button onclick="ToggleDropDown('ClimbingDropDown')">climbing</button>
+                    </div>
+
+                    <div class = centre>
+                        <button onclick="ToggleDropDown('ClimbingDropDown')" class = "DropdownSubButton">climbing</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "ClimbingDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
                             </div>
-                        </div>
-                        </div>
-                        <div>
-                        <button onclick="ToggleDropDown('MovingTilesDropDown')">Moving Tiles</button>
+                        </div>    
+                    </div>
+
+                    <div class = centre>
+                        <button onclick="ToggleDropDown('MovingTilesDropDown')" class = "DropdownSubButton">Moving Tiles</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "MovingTilesDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
                             </div>
-                        </div>
-                        </div>
-                        <div>
-                        <button onclick="ToggleDropDown('EnemyAIDropDown')">Enemy AI</button>
+                        </div>    
+                    </div>
+
+                    <div class = centre>
+                        <button onclick="ToggleDropDown('EnemyAIDropDown')" class = "DropdownSubButton">Enemy AI</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "EnemyAIDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
                             </div>
-                        </div>
-                        </div>
-                        <div>
-                        <button onclick="ToggleDropDown('ProceduralGenerationDropDown')">Procedural Generation</button>
+                        </div>    
+                    </div>
+
+                    <div class = centre>
+                        <button onclick="ToggleDropDown('ProceduralGenerationDropDown')" class = "DropdownSubButton">Procedural Generation</button>
+                    </div>
+                    <div class = centre>
                         <div>
                             <div id = "ProceduralGenerationDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
                             </div>
-                        </div>
-                        </div>
+                        </div>    
                     </div>
                 </div>
             </div>
-            </div>
-
-
         </section>
     </div>
 
 
-    <ul>git hub page</ul>
-    <ul>demo video</ul>
-    <ul>essentially forum post of cool bits that were made with it, using openable list thingy with sections</ul>
-    <ul>description of the game</ul>
+        <section id = "Project2">
+            <div class = "centre">
+                    <div class = "logo">
+                        <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
+                            <img src = "githublogo.png">
+                        </a>
+                    </div>
+                        <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
+                            <button class = "Project1Title">MILITARY DEFENCE</button>
+                        </a>
+            </div>
+            <div class = "videoContainer">
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/Arcl2Ql2c68?autoplay=1&mute=1&loop=1&playlist=Arcl2Ql2c68"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionParaTitle">
+                    About
+                </div>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
+            </div>
 
+            <div class = "centre">
+                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown2')">Core Mechanics</button>
+            </div>
 
-    <section id = "Project2">
-
-    </section>
-
-
-
+            <div>
+                <div class = centerRow>
+                <div id = "MechanicsDropDown2">
+                    <div class = centre> 
+                        <button onclick="ToggleDropDown('temp1')" class = "DropdownSubButton">temp1</button>
+                    </div>
+                    <div class = centre>
+                        <div>
+                            <div id = "temp1">
+                                    <div>Mechanic Image/Video here</div>
+                                    <div>description of how it works</div>
+                                    <div>code snippet if required</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <section id = "Project3">
+        <div class = "centre">
+                    <div class = "logo">
+                        <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
+                            <img src = "githublogo.png">
+                        </a>
+                    </div>
+                        <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
+                            <button class = "Project1Title">ORBIT SIMULATION</button>
+                        </a>
+            </div>
+            <div class = "videoContainer">
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/eJyEBcNtznY?autoplay=1&mute=1&loop=1&playlist=eJyEBcNtznY"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionParaTitle">
+                    About
+                </div>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
+            </div>
 
+            <div class = "centre">
+                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown3')">Core Mechanics</button>
+            </div>
+
+            <div>
+                <div class = centerRow>
+                <div id = "MechanicsDropDown3">
+                    <div class = centre> 
+                        <button onclick="ToggleDropDown('temp2')" class = "DropdownSubButton">temp1</button>
+                    </div>
+                    <div class = centre>
+                        <div>
+                            <div id = "temp2">
+                                    <div>Mechanic Image/Video here</div>
+                                    <div>description of how it works</div>
+                                    <div>code snippet if required</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-
-
-
 
     <section id = "Project4">
+        <div class = "centre">
+                    <div class = "logo">
+                        <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
+                            <img src = "githublogo.png">
+                        </a>
+                    </div>
+                        <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
+                            <button class = "Project1Title">SCROLL TO THE MOON</button>
+                        </a>
+            </div>
+            <div class = "videoContainer">
+                <iframe
+                    width="500"
+                    height="300"
+                    src="https://www.youtube.com/embed/-WCQr_2sUW0?autoplay=1&mute=1&loop=1&playlist=-WCQr_2sUW0"
+                    title="Gameplay Demo"
+                    allow="autoplay; encrypted-media"
+                    loop="true"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionParaTitle">
+                    About
+                </div>
+            </div>
+            <div class = "centre">
+                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
+            </div>
 
+            <div class = "centre">
+                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown4')">Core Mechanics</button>
+            </div>
+
+            <div>
+                <div class = centerRow>
+                <div id = "MechanicsDropDown4">
+                    <div class = centre> 
+                        <button onclick="ToggleDropDown('temp3')" class = "DropdownSubButton">temp1</button>
+                    </div>
+                    <div class = centre>
+                        <div>
+                            <div id = "temp3">
+                                    <div>Mechanic Image/Video here</div>
+                                    <div>description of how it works</div>
+                                    <div>code snippet if required</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
+
 </div>
 </body>
 </html>

@@ -1,12 +1,26 @@
 body
 {
-    background-repeat:no-repeat;
-    background-image:linear-gradient(45deg,#09090B 0%, #18181B 100%);
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
     margin:0;
     padding:0;
+    background:linear-gradient(45deg,#09090B, #050525,#09090B, #050525);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove
+ {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1
@@ -76,22 +90,41 @@ button:hover
     border-radius: 10px;
     background-image:linear-gradient(130deg,#b700ff 0%, #161764 100%);
     color: white;
-    margin-top: 10%;
+    margin-top: 15%;
     scale: 170%;
     background-color: #5a00a3;
     font-size: 50px;
 }
 
-#Project1
-{
-    margin-top: 20%;
-    scale: 170%;
-    
-}
-
-#Project1:hover
+#mainTitle:hover
 {
     transform: scale(1.1);
+}
+
+#Project1
+{
+    position: relative;
+    margin-top: 20%;
+    scale: 170%;
+}
+
+#Project2
+{
+    position: relative;
+    margin-top: 50%;
+    scale: 170%;
+}
+
+#Project3
+{
+    margin-top: 80%;
+    scale: 170%;
+}
+
+#Project4
+{
+    margin-top: 110%;
+    scale: 170%;
 }
 
 
@@ -161,20 +194,50 @@ iframe:hover
     padding:20px;
     font-size: 30px;
     color: white;
-    max-width: 20%;
-    background-color: 	#03396c;
+    max-width: 30%;
+    background-color: 	#83a3a5;
 }
 
-#MechanicsDropDown
+.DropdownSubButton
 {
-    width: 600px;
-    max-width: 90%;
-    margin: 0 auto;      /* centers block elements */
+    font-style: bold;
+    border: 5px solid #03396c;
+    border-radius: 30px;
+    padding:20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 100%;
+    background-color: 	rgb(211, 211, 211);
+}
+
+#MechanicsDropDown1
+{
+    width:20%;
+    margin: 0 auto;
     display: none;
-    color: red;
-    border-radius: 50px;
-    border: 2px solid white;
-    background-image: linear-gradient(45deg,rgb(27, 21, 70) 0%, #122c41 100%);}
+}
+
+#MechanicsDropDown2
+{
+    width:20%;
+    margin: 0 auto;
+    display: none;
+}
+
+#MechanicsDropDown3
+{
+    width:20%;
+    margin: 0 auto;
+    display: none;
+}
+
+#MechanicsDropDown4
+{
+    width:20%;
+    margin: 0 auto;
+    display: none;
+}
+
 
 .centerRow
 {
@@ -192,7 +255,6 @@ iframe:hover
 
 .gridLayoutContainer div
 {
-    
     padding: 10px;
     font-size: 30px;
     text-align: center;
@@ -202,36 +264,101 @@ iframe:hover
 {
     background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
     border-radius: 10px;
+    padding: 20px;
 }
 
 #ShootingDropDown
 {
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #ClimbingDropDown
 {
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #MovingTilesDropDown
 {
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #EnemyAIDropDown
 {
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #ProceduralGenerationDropDown
 {
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:black;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.logo:hover
+{
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    opacity: 100%;
+    color:white;
+    background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
+}
+
+#temp1
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#temp2
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#temp3
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
 }

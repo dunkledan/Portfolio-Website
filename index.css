@@ -14,8 +14,6 @@ h1
     display: inline;
     color:white;
     font-family: Arial, Helvetica, sans-serif ;
-    padding-left: 10%;
-    max-width: 20%;
 }
 
 .topBarButtons
@@ -42,11 +40,6 @@ button
     width: 100%;
     background-image:linear-gradient(130deg,#001a30 0%, #000f1b 100%);
     z-index: 1000;
-}
-
-.topBand:hover
-{
-    transform: scale(1.1);
 }
 
 .centre
@@ -85,9 +78,27 @@ button
     color:white;
 }
 
+.aboutMeContainer
+{
+    background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    border: 2px solid white;
+    border-radius: 120px;
+    min-height: 400px;
+    color: white;
+}
+
+.aboutMeContainer:hover
+{
+    transform: scale(1.1);
+}
+
 .TechSkillsContainer
 {
-    background-image:linear-gradient(130deg,#1e2d6d 0%, #341E4F 100%);
+    background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
     border: 2px solid white;
     border-radius: 120px;
     min-height: 400px;
@@ -122,23 +133,14 @@ button:hover
 
 .textImageInline
 {
-    border-radius: 120px;
     display: flex;
-    justify-content: center;
-    background-color:#341a72;
-    padding: 1%;
-    width: auto;
     align-items: center;
-}
-
-.textImageInline:hover
-{
-    transform: scale(1.1);
+    gap: 20px;
 }
 
 .video-container 
 {
-    margin-top: 100px;
+    margin-top: 140px;
     background-color: #1a486b;
     overflow: hidden;
     width: 100vw;
@@ -183,6 +185,35 @@ iframe:hover
     width: 100%;
     height: auto;
     display: block;
+}
+
+.logoContainer
+{
+    margin-right: 50px;
+    margin-left: auto;
+    display: flex;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove 
+{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.logoContainer:hover
+{
+    transform: scale(1.1);
 }
 
 .logo {
