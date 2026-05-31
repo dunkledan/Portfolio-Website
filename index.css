@@ -5,6 +5,8 @@ body
     background-size: cover;
     background-image:linear-gradient(45deg,rgb(27, 21, 70) 0%, #122c41 100%);
     overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 h1
@@ -18,7 +20,6 @@ h1
 
 .topBarButtons
 {
-    padding-left: 10%;
     display: inline-flex;
     justify-content: center;
 }
@@ -33,22 +34,19 @@ button
     cursor: pointer;
 }
 
-.topbandButtonSpacing
-{
-    padding-left: 20%;
-}
-
 .topBand
 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1%;
-    font-size: 3ch;
     background-image:linear-gradient(130deg,#001a30 0%, #000f1b 100%);
     z-index: 1000;
-    padding: 20px;
+}
+
+.topBand:hover
+{
+    transform: scale(1.1);
 }
 
 .centre
@@ -92,9 +90,6 @@ button
     background-image:linear-gradient(130deg,#1e2d6d 0%, #341E4F 100%);
     border: 2px solid white;
     border-radius: 120px;
-    padding: 20px;
-    margin: 30px 60px 30px auto;
-    max-width: 30%;
     min-height: 400px;
     color: white;
 }
@@ -144,18 +139,14 @@ button:hover
 .video-container 
 {
     margin-top: 100px;
-    padding: 1%;
     background-color: #1a486b;
-    width: 100%;
     overflow: hidden;
-    display: flex;
+    width: 100vw;
 }
 
-.video-track {
+.video-track 
+{
     display: flex;
-    gap: 20px;
-    width: max-content;
-    will-change: transform;
 }
 
 iframe 
@@ -225,21 +216,13 @@ iframe:hover
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    padding-top: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 
 .aboutMeText {
     background-image:linear-gradient(130deg,#1b2968 0%, #341E4F 100%);
     border: 2px solid white;
     border-radius: 120px;
-    padding: 40px;
-    width: min(600px, 40vw);
     color: white;
-    font-size: 3ch;
-    max-width: 600px;
-    min-height: 300px;
 }
 
 .aboutMeText h3 {
@@ -256,4 +239,19 @@ button
 {
     background-image:linear-gradient(130deg,#1e2d6d 0%, #341E4F 100%);
     min-height: 60px;
+}
+
+
+.gridLayoutContainer
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.gridLayoutContainer div
+{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
 }

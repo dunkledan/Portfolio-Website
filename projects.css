@@ -1,10 +1,12 @@
 body
 {
     background-repeat:no-repeat;
-    background-image:linear-gradient(45deg,rgb(104, 32, 32) 0%, #004247 100%);
+    background-image:linear-gradient(45deg,#09090B 0%, #18181B 100%);
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 h1
@@ -24,12 +26,10 @@ h1
 
 .menuButton
 {
-    border-color: grey;
     border-radius: 10px;
     font-size: 50px;
     cursor: pointer;
-    background: linear-gradient(45deg,rgb(255, 166, 0) 0%, rgb(255, 0, 0) 100%);
-    opacity: 80%;
+    background: linear-gradient(135deg,#00F5FF 0%, #3B82F6 100%);
 }
 
 button
@@ -37,10 +37,19 @@ button
     cursor: pointer;
 }
 
+.topBar
+{
+    position: fixed;
+    z-index: 1000;    
+    background-image:linear-gradient(45deg,#09090B 0%, #18181B 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .buttonPadding
 {
     display: inline-block;
-    width: 300px;
 }
 
 button:hover
@@ -54,27 +63,40 @@ button:hover
 
 .homeButton
 {
-    border-color: grey;
+    color: white;
     border-radius: 10px;
     font-size: 50px;
-    cursor: pointer;
-    background: linear-gradient(45deg,rgb(255, 166, 0) 0%, rgb(255, 0, 0) 100%);
-    opacity: 80%;
-    padding-left: 1%;
-    position: absolute;
-    top:10%;
+    cursor: pointer;      
+    background-image:linear-gradient(130deg,#004e92 0%, #3c0081 100%);
+}
+
+#mainTitle
+{
+    font-style: bold;
+    border-radius: 10px;
+    background-image:linear-gradient(130deg,#b700ff 0%, #161764 100%);
+    color: white;
+    margin-top: 10%;
+    scale: 170%;
+    background-color: #5a00a3;
+    font-size: 50px;
 }
 
 #Project1
 {
-    margin-top:1000px;
+    margin-top: 20%;
     scale: 170%;
+    
+}
+
+#Project1:hover
+{
+    transform: scale(1.1);
 }
 
 
 .Project1Title
 {
-    position: relative;
     background-color: #5a00a3;
     font-size: 50px;
     color: white;
@@ -145,8 +167,71 @@ iframe:hover
 
 #MechanicsDropDown
 {
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;      /* centers block elements */
+    display: none;
+    color: red;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-image: linear-gradient(45deg,rgb(27, 21, 70) 0%, #122c41 100%);}
+
+.centerRow
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gridLayoutContainer
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.gridLayoutContainer div
+{
     
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#ShapeShiftDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
-    color:red;
-    font-size: 100px;
+    color:black;
+    border-radius: 10px;
+}
+
+#ShootingDropDown
+{
+    display:none;
+    color:black;
+}
+
+#ClimbingDropDown
+{
+    display:none;
+    color:black;
+}
+
+#MovingTilesDropDown
+{
+    display:none;
+    color:black;
+}
+
+#EnemyAIDropDown
+{
+    display:none;
+    color:black;
+}
+
+#ProceduralGenerationDropDown
+{
+    display:none;
+    color:black;
 }

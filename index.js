@@ -50,9 +50,9 @@ requestAnimationFrame(autoScroll);
 
 function ToggleDropDown(dropdownMenu)
 {
-    if(document.getElementById(dropdownMenu).style.display != 'flex')
+    if(document.getElementById(dropdownMenu).style.display != 'inline-block')
     {
-        document.getElementById(dropdownMenu).style.display = 'flex';
+        document.getElementById(dropdownMenu).style.display = 'inline-block';
         document.getElementById(dropdownMenu).scrollIntoView({behavior:"smooth"});
     }
     else
@@ -61,5 +61,7 @@ function ToggleDropDown(dropdownMenu)
     }
 }
 
-
-
+function GoToTop()
+{
+    globalThis. scrollTo({ top: 0, left: 0, behavior: "smooth" });
+}
