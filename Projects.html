@@ -8,9 +8,9 @@
     <script src="index.js"></script>
 </head>
 <body>
-
+ <button id="menuToggle" class="menuToggle" onclick="ToggleSidebar()">MENU</button>
     <section id = "menu">
-        <div class = "sideBar">
+        <div id="sideBar" class="sideBar">
             <div class = "logoTopContainer">
                 <div class = "logoTop">
                     <a href = "https://www.linkedin.com/in/daniel-lawrence-625a4b359/" target="_blank">
@@ -31,12 +31,13 @@
                 </div>
             </div>
             <div class = "gridLayoutContainer">
-                <button onclick = "GoToHome()" class = "homeButton">Back</button>
-                <button onclick = "GoToSection('Project1')" class = "menuButton">Escape The Labrynth</button>
-                <button onclick = "GoToSection('Project2')" class = "menuButton">Military Defence</button>
-                <button onclick = "GoToSection('Project3')" class = "menuButton">Orbit Simulation</button>
-                <button onclick = "GoToSection('Project4')" class = "menuButton">Scroll To The Moon</button>
-                <button onclick = "GoToSection('Project5')" class = "menuButton">Clamber</button>
+                <button onclick = "GoToHome()" class = "homeButton Hoverbutton" >Back</button>
+                <button onclick = "GoToSection('menu')" class = "topButton Hoverbutton">Project Showcase</button>
+                <button onclick = "GoToSection('Project1')" class = "menuButton Hoverbutton">Escape The Labrynth</button>
+                <button onclick = "GoToSection('Project2')" class = "menuButton Hoverbutton">Military Defence</button>
+                <button onclick = "GoToSection('Project3')" class = "menuButton Hoverbutton">Orbit Simulation</button>
+                <button onclick = "GoToSection('Project4')" class = "menuButton Hoverbutton">Scroll To The Moon</button>
+                <button onclick = "GoToSection('Project5')" class = "menuButton Hoverbutton">Clamber</button>
             </div>
         </div>
     </section>
@@ -51,6 +52,7 @@
 
         <section id = "Project1" class="project">
             <div class = "centre">
+                <div class = "TextLogoInline">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
                             <img src = "githublogo.png">
@@ -59,7 +61,8 @@
                         <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
                             <button class = "Project1Title">ESCAPE THE LABRYNTH</button>
                         </a>
-            </div>
+                    </div>
+                </div>
             <div class = "videoContainer">
                 <iframe
                     width="500"
@@ -274,14 +277,16 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
         <section id = "Project2" class="project">
             <div class = "centre">
+                <div class = "TextLogoInline">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
                             <img src = "githublogo.png">
                         </a>
                     </div>
-                        <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
-                            <button class = "Project1Title">MILITARY DEFENCE</button>
-                        </a>
+                    <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
+                        <button class = "Project1Title">MILITARY DEFENCE</button>
+                    </a>
+                </div>
             </div>
             <div class = "videoContainer">
                 <iframe
@@ -304,55 +309,89 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown2')">Core Mechanics</button>
             </div>
-
+            
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown2"  class = "MechanicsDropDown">
-                    <div class = centre> 
-                        <button onclick="ToggleDropDown('temp1')" class = "DropdownSubButton">temp1</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "temp1"  class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src=""
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Description here</div>
+                    <div id = "MechanicsDropDown2"  class = "MechanicsDropDown">
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('temp1')" class = "DropdownSubButton">temp1</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "temp1"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class = imgHover >
-                                    <div><img src = "MP.png"></div>
-                                </div>
                             </div>
+                        </div>
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('temp2')" class = "DropdownSubButton">temp2</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "temp2"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+
         </section>
 
     <section id = "Project3" class="project">
         <div class = "centre">
+                <div class = "TextLogoInline">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
                             <img src = "githublogo.png">
                         </a>
                     </div>
-                        <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
-                            <button class = "Project1Title">ORBIT SIMULATION</button>
-                        </a>
+                    <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
+                        <button class = "Project1Title">ORBIT SIMULATION</button>
+                    </a>
+                </div>
             </div>
             <div class = "videoContainer">
                 <iframe
@@ -373,39 +412,213 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </div>
             </div>
 
+
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown3')">Core Mechanics</button>
             </div>
 
-            <div>
-                <div class = centerRow>
-                <div id = "MechanicsDropDown3" class = "MechanicsDropDown">
-                    <div class = centre> 
-                        <button onclick="ToggleDropDown('temp2')" class = "DropdownSubButton">temp1</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "temp2"  class = "MechanicsDropDown">
-                                    <div>Mechanic Image/Video here</div>
-                                    <div>description of how it works</div>
-                                    <div>code snippet if required</div>
+            <div id = "MechanicsDropDown3"  class = "MechanicsDropDown">            
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('Camera')" class = "DropdownSubButton">Camera</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Camera"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
                             </div>
                         </div>
                     </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('OBJLoader')" class = "DropdownSubButton">.obj Loader</button>
                 </div>
+                <div class = centre>
+                    <div>
+                        <div id = "OBJLoader"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('DataStructs')" class = "DropdownSubButton">Data Structures</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "DataStructs"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('ObjSelect')" class = "DropdownSubButton">Object Selection</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "ObjSelect"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('TextureLoad')" class = "DropdownSubButton">Texture Loading</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "TextureLoad"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                        <button onclick="ToggleDropDown('Lighting')" class = "DropdownSubButton">Lighting</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Lighting"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
+            
     </section>
 
     <section id = "Project4" class="project">
         <div class = "centre">
+                <div class = "TextLogoInline">
                     <div class = "logo">
                         <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
                             <img src = "githublogo.png">
                         </a>
                     </div>
-                        <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
-                            <button class = "Project1Title">SCROLL TO THE MOON</button>
-                        </a>
+                    <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
+                        <button class = "Project1Title">SCROLL TO THE MOON</button>
+                    </a>
+                </div>
             </div>
             <div class = "videoContainer">
                 <iframe
@@ -426,39 +639,211 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </div>
             </div>
 
+            
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown4')">Core Mechanics</button>
             </div>
 
-            <div>
-                <div class = centerRow>
-                <div id = "MechanicsDropDown4"  class = "MechanicsDropDown">
-                    <div class = centre> 
-                        <button onclick="ToggleDropDown('temp3')" class = "DropdownSubButton">temp1</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "temp3"  class = "MechanicsDropDown">
-                                    <div>Mechanic Image/Video here</div>
-                                    <div>description of how it works</div>
-                                    <div>code snippet if required</div>
+            <div id = "MechanicsDropDown4"  class = "MechanicsDropDown">            
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('Audio')" class = "DropdownSubButton">Audio</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Audio"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
                             </div>
                         </div>
                     </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('Input')" class = "DropdownSubButton">Input</button>
                 </div>
-            </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Input"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('TileMaps')" class = "DropdownSubButton">Tile Maps</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "TileMaps"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('Collisions')" class = "DropdownSubButton">Collisions</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "ObjSelect"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                    <button onclick="ToggleDropDown('GameScreens')" class = "DropdownSubButton">Game Screens</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "GameScreens"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class = centre> 
+                        <button onclick="ToggleDropDown('Enemies')" class = "DropdownSubButton">Enemies</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Enemies"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
     </section>
 
     <section id = "Project5" class="project">
         <div class = "centre">
+                <div class = "TextLogoInline">
                     <div class = "logo">
                         <a href = "https://github.com/M4R5-PH0B05/clamber" target="_blank">
                             <img src = "githublogo.png">
                         </a>
                     </div>
-                        <a href = "https://github.com/M4R5-PH0B05/clamber" target="_blank">
-                            <button class = "Project1Title">CLAMBER</button>
-                        </a>
+                    <a href = "https://github.com/M4R5-PH0B05/clamber" target="_blank">
+                        <button class = "Project1Title">CLAMBER</button>
+                    </a>
+                </div>
             </div>
             <div class = "videoContainer">
                 <iframe
@@ -481,25 +866,73 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
 
             <div class = "centre">
-                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown5')">Core Mechanics</button>
+                <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown5')">My contributions</button>
             </div>
 
             <div>
                 <div class = centerRow>
                 <div id = "MechanicsDropDown5"  class = "MechanicsDropDown">
                     <div class = centre> 
-                        <button onclick="ToggleDropDown('temp4')" class = "DropdownSubButton">temp1</button>
+                    <button onclick="ToggleDropDown('Oversight')" class = "DropdownSubButton">Oversight</button>
+                </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Oversight"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "temp4"  class = "MechanicsDropDown">
-                                    <div>Mechanic Image/Video here</div>
-                                    <div>description of how it works</div>
-                                    <div>code snippet if required</div>
+                </div>  
+            <div class = centre> 
+                        <button onclick="ToggleDropDown('Mechanic Prototypes')" class = "DropdownSubButton">Mechanic Prototypes</button>
+            </div>
+                <div class = centre>
+                    <div>
+                        <div id = "Mechanic Prototypes"  class = "MechanicDropDownWrapper">
+                            <div class =centre>
+                                <iframe
+                                    width="500"
+                                    height="300"
+                                    src=""
+                                    title="Gameplay Demo"
+                                    allow="autoplay; encrypted-media"
+                                    loop="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class =centre>
+                                <div class = "CodeDescriptionPara"  >
+                                    <div>Description here</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class = imgHover >
+                                <div><img src = "MP.png"></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
     </section>
 

@@ -85,7 +85,10 @@ button
 
 .aboutMeContainer
 {
-    padding: 30px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
     background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;

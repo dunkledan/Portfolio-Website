@@ -54,3 +54,8 @@ function ToggleDropDown(dropdownMenu)
         GoToSection(dropdownMenu);
     }
 }
+
+function ToggleSidebar()
+{
+    document.getElementById("sideBar").classList.toggle("showSidebar");
+}
