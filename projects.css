@@ -113,9 +113,14 @@ button:hover
 
 .project
 {
+    display:flexbox;
+    align-items: center;
     position: relative;
     margin-top: 150px;
     margin-bottom: 150px;
+    background-color: red;
+    width: 70%;
+    justify-content: center;
 }
 
 .Project1Title

@@ -113,6 +113,7 @@ button:hover
 .textImageInline
 {
     display: flex;
+    align-items: center;
 }
 
 .video-container 
@@ -162,11 +163,9 @@ iframe:hover
 
 .logoContainer
 {
-    height: 30%;
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
     margin: 10px;
     margin-left: auto;
     display: flex;
@@ -196,7 +195,8 @@ iframe:hover
 
 .logo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
     flex-wrap: wrap;
     padding: 10px;
