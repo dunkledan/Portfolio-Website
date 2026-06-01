@@ -84,6 +84,16 @@ button:hover
     background-image:linear-gradient(130deg,#004e92 0%, #3c0081 100%);
 }
 
+.imgHover
+{
+    
+}
+
+.imgHover:hover
+{
+    transform: scale(1.03);
+}
+
 #mainTitle
 {
     font-style: bold;
@@ -160,11 +170,27 @@ iframe:hover
     transform: scale(1.1);
 }
 
+.CodeDescriptionPara
+{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    max-width: 70%;
+    background-color:	#03396c;
+}
+
+.CodeDescriptionPara:hover
+{
+    transform: scale(1.1);
+}
+
 .DescriptionPara
 {
     border: 2px solid white;
     border-radius: 30px;
-    padding: 40px;
+    padding: 20px;
     font-size: 20px;
     color: white;
     max-width: 30%;

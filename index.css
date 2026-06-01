@@ -18,7 +18,8 @@ h1
 
 .topBarButtons
 {
-    
+    gap: 50px;
+    padding:50px;
     display: inline-flex;
     justify-content: center;
 }
@@ -81,6 +82,7 @@ button
 
 .aboutMeContainer
 {
+    padding: 30px;
     min-width: 650px;
     background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
     background-size: 400% 400%;
@@ -98,6 +100,7 @@ button
 
 .TechSkillsContainer
 {
+    padding: 30px;
     background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
     background-size: 400% 400%;
     animation: gradientMove 10s ease infinite;
@@ -192,9 +195,14 @@ iframe:hover
 
 .logoContainer
 {
-    margin-right: 50px;
+    height: 30%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
     margin-left: auto;
-    display: inline-flex;
+    display: flex;
     border-radius: 10px;
     background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
     background-size: 400% 400%;
@@ -286,7 +294,6 @@ button
 
 .gridLayoutContainer div
 {
-    padding: 30px;
     font-size: 30px;
     text-align: left;
 }
