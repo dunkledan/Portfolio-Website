@@ -10,47 +10,33 @@
 <body>
 
     <section id = "menu">
-        <div class = "topBar">
-            <div class = "gridLayoutContainer">
-                <div>
-                    <div class = buttonPadding>
-                        <button onclick = "GoToHome()" class = "homeButton">Back</button>
-                    </div>
-                    <div class = buttonPadding>
-                        <button onclick = "GoToSection('Project1')" class = "menuButton">Escape The Labrynth</button>
-                    </div>
-                    <div class = buttonPadding>  
-                        <button onclick = "GoToSection('Project2')" class = "menuButton">Military Defence</button>
-                    </div>
-                    <div class = buttonPadding>  
-                        <button onclick = "GoToSection('Project3')" class = "menuButton">Orbit Simulation</button>
-                    </div>
-                    <div onclick = "GoToSection('Project4')" class = buttonPadding>  
-                        <button class = "menuButton">Scroll To The Moon</button>
-                    </div>
-                    <div onclick = "GoToSection('Project5')" class = buttonPadding>  
-                        <button class = "menuButton">Clamber</button>
-                    </div>
+        <div class = "sideBar">
+            <div class = "logoTopContainer">
+                <div class = "logoTop">
+                    <a href = "https://www.linkedin.com/in/daniel-lawrence-625a4b359/" target="_blank">
+                        <img src = "LinkInLogo.png">
+                    </a>
                 </div>
-                    <div class = "logoTopContainer">
-                        <div class = "logoTop">
-                            <a href = "https://www.linkedin.com/in/daniel-lawrence-625a4b359/" target="_blank">
-                                <img src = "LinkInLogo.png">
-                            </a>
-                        </div>
 
-                        <div class = "logoTop">
-                            <a href = "https://github.com/dunkledan" target="_blank">
-                                <img src = "githublogo.png">
-                            </a>
-                        </div>
+                <div class = "logoTop">
+                    <a href = "https://github.com/dunkledan" target="_blank">
+                        <img src = "githublogo.png">
+                    </a>
+                </div>
 
-                        <div class = "logoTop">
-                            <a href = "mailto:dunkledan@outlook.com?subject=Portfolio%20Contact" target="_blank">
-                                <img src = "outlookLogo.png">
-                            </a>
-                        </div>
-                    </div>
+                <div class = "logoTop">
+                    <a href = "mailto:dunkledan@outlook.com?subject=Portfolio%20Contact" target="_blank">
+                        <img src = "outlookLogo.png">
+                    </a>
+                </div>
+            </div>
+            <div class = "gridLayoutContainer">
+                <button onclick = "GoToHome()" class = "homeButton">Back</button>
+                <button onclick = "GoToSection('Project1')" class = "menuButton">Escape The Labrynth</button>
+                <button onclick = "GoToSection('Project2')" class = "menuButton">Military Defence</button>
+                <button onclick = "GoToSection('Project3')" class = "menuButton">Orbit Simulation</button>
+                <button onclick = "GoToSection('Project4')" class = "menuButton">Scroll To The Moon</button>
+                <button onclick = "GoToSection('Project5')" class = "menuButton">Clamber</button>
             </div>
         </div>
     </section>
@@ -99,185 +85,187 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
 
             <div>
-                <div class = centerRow>
-                <div id = "MechanicsDropDown1" class = "MechanicsDropDown">
-                    <div class = centre> 
-                        <button onclick="ToggleDropDown('ShapeShiftDropDown')" class = "DropdownSubButton">Shapeshifting</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "ShapeShiftDropDown" class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src="https://www.youtube.com/embed/U6e6In_iuos?autoplay=1&mute=1&loop=1&playlist=U6e6In_iuos"
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses determines this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which is active and other relevant properties for that state.</div>
+                    <div class = centerRow>
+                        <div id = "MechanicsDropDown1" class = "MechanicsDropDown">
+                            <div class = centre> 
+                                <button onclick="ToggleDropDown('ShapeShiftDropDown')" class = "DropdownSubButton">Shapeshifting</button>
+                            </div>
+                            <div class = centre>
+                                <div>
+                                    <div id = "ShapeShiftDropDown" class = "MechanicDropDownWrapper">
+                                        <div class =centre>
+                                            <iframe
+                                                width="500"
+                                                height="300"
+                                                src="https://www.youtube.com/embed/U6e6In_iuos?autoplay=1&mute=1&loop=1&playlist=U6e6In_iuos"
+                                                title="Gameplay Demo"
+                                                allow="autoplay; encrypted-media"
+                                                loop="true"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses determines this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which is active and other relevant properties for that state.</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class = "imgHover" >
+                                            <div><img src = "csShapeShiftCode.png"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class = imgHover >
-                                    <div><img src = "csShapeShiftCode.png"></div>
+                            </div>
+
+                            <div class = centre>
+                                <button onclick="ToggleDropDown('ShootingDropDown')" class = "DropdownSubButton">Shooting</button>
+                            </div>
+                            <div class = centre>
+                                <div>
+                                    <div id = "ShootingDropDown" class = "MechanicDropDownWrapper">
+                                        <div class =centre>
+                                            <iframe
+                                                width="500"
+                                                height="300"
+                                                src=""
+                                                title="Gameplay Demo"
+                                                allow="autoplay; encrypted-media"
+                                                loop="true"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>Descrpition snippet</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = imgHover >
+                                                <div><img src = "csShootCode.png"></div>
+                                                <div><img src = "csShootCode2.png"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <div class = centre>
+                                <button onclick="ToggleDropDown('ClimbingDropDown')" class = "DropdownSubButton">climbing</button>
+                            </div>
+                            <div class = centre>
+                                <div>
+                                    <div id = "ClimbingDropDown" class = "MechanicDropDownWrapper">
+                                        <div class =centre>
+                                            <iframe
+                                                width="500"
+                                                height="300"
+                                                src=""
+                                                title="Gameplay Demo"
+                                                allow="autoplay; encrypted-media"
+                                                loop="true"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>Descrpition snippet</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = imgHover >
+                                                <div><img src = "csClimbCode.png"></div>
+                                                <div><img src = "csClimbCode2.png"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class = centre>
+                                <button onclick="ToggleDropDown('EnemyAIDropDown')" class = "DropdownSubButton">Enemy AI</button>
+                            </div>
+                            <div class = centre>
+                                <div>
+                                    <div id = "EnemyAIDropDown" class = "MechanicDropDownWrapper">
+                                        <div class =centre>
+                                            <iframe
+                                                width="500"
+                                                height="300"
+                                                src=""
+                                                title="Gameplay Demo"
+                                                allow="autoplay; encrypted-media"
+                                                loop="true"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>Descrpition snippet</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = imgHover >
+                                                <div><img src = "csAICode.png"></div>
+                                            </div>
+                                        </div>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>Descrpition snippet 2</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = imgHover >
+                                                <div><img src = "csAICode2.png"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class = centre>
+                                <button onclick="ToggleDropDown('ProceduralGenerationDropDown')" class = "DropdownSubButton">Procedural Generation</button>
+                            </div>
+                            <div class = centre>
+                                <div>
+                                    <div id = "ProceduralGenerationDropDown" class = "MechanicDropDownWrapper">
+                                        <div class =centre>
+                                            <iframe
+                                                width="500"
+                                                height="300"
+                                                src=""
+                                                title="Gameplay Demo"
+                                                allow="autoplay; encrypted-media"
+                                                loop="true"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = "CodeDescriptionPara"  >
+                                                <div>Descrpition snippet</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class =centre>
+                                            <div class = imgHover >
+                                                <div><img src = "csProceduralGenCode.png"></div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
                     </div>
-
-                    <div class = centre>
-                        <button onclick="ToggleDropDown('ShootingDropDown')" class = "DropdownSubButton">Shooting</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "ShootingDropDown" class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src=""
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Descrpition snippet</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = imgHover >
-                                        <div><img src = "csShootCode.png"></div>
-                                        <div><img src = "csShootCode2.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = centre>
-                        <button onclick="ToggleDropDown('ClimbingDropDown')" class = "DropdownSubButton">climbing</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "ClimbingDropDown" class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src=""
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Descrpition snippet</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = imgHover >
-                                        <div><img src = "csClimbCode.png"></div>
-                                        <div><img src = "csClimbCode2.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <div class = centre>
-                        <button onclick="ToggleDropDown('EnemyAIDropDown')" class = "DropdownSubButton">Enemy AI</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "EnemyAIDropDown" class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src=""
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Descrpition snippet</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = imgHover >
-                                        <div><img src = "csAICode.png"></div>
-                                    </div>
-                                </div>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Descrpition snippet 2</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = imgHover >
-                                        <div><img src = "csAICode2.png"></div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>    
-                    </div>
-
-                    <div class = centre>
-                        <button onclick="ToggleDropDown('ProceduralGenerationDropDown')" class = "DropdownSubButton">Procedural Generation</button>
-                    </div>
-                    <div class = centre>
-                        <div>
-                            <div id = "ProceduralGenerationDropDown" class = "MechanicDropDownWrapper">
-                                <div class =centre>
-                                    <iframe
-                                        width="500"
-                                        height="300"
-                                        src=""
-                                        title="Gameplay Demo"
-                                        allow="autoplay; encrypted-media"
-                                        loop="true"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = "CodeDescriptionPara"  >
-                                        <div>Descrpition snippet</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class =centre>
-                                    <div class = imgHover >
-                                        <div><img src = "csProceduralGenCode.png"></div>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>    
-                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -345,7 +333,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                 </div>
                                 <br>
                                 <div class = imgHover >
-                                    <div><img src = ".png"></div>
+                                    <div><img src = "MP.png"></div>
                                 </div>
                             </div>
                             </div>
