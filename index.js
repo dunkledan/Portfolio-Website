@@ -1,13 +1,3 @@
-function goToAboutMe()
-{
-    document.getElementById("aboutMe").scrollIntoView({behavior:"smooth"})
-}
-
-function goToTechSkills()
-{
-    document.getElementById("technicalSkills").scrollIntoView({behavior:"smooth"})
-}
-
 function goToProjects()
 {
     location.replace("/Projects.html");
@@ -23,7 +13,6 @@ function GoToSection(section)
     const element = document.getElementById(section);
     const offset = 250; 
     const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
-
     window.scrollTo({ top: y,  behavior: "smooth" });
 }
 
@@ -64,9 +53,4 @@ function ToggleDropDown(dropdownMenu)
         document.getElementById(dropdownMenu).style.display = 'none';
         GoToSection(dropdownMenu);
     }
-}
-
-function GoToTop()
-{
-    globalThis. scrollTo({ top: 0, left: 0, behavior: "smooth" });
 }

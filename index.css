@@ -11,9 +11,15 @@ body
 
 h1
 {
+    margin-left: 3dvh;
     display: inline;
     color:white;
     font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1:hover
+{
+    transform: scale(1.1);
 }
 
 .topBarButtons
@@ -44,53 +50,18 @@ button
     z-index: 1000;
 }
 
-.centre
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left
-{
-    padding-left: 1%;
-    display: block;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.bgImageContainer
-{
-    position: relative;
-    width: 100%;
-    height: 10%;
-    background-color: #384957;
-    opacity: 80%;
-}
-
-.bgImage img
-{
-    width: 100%;
-    height: 200%;
-}
-
-.introParagraph
-{
-    font-size:3ch;
-    color:white;
-}
-
 .aboutMeContainer
 {
     padding: 30px;
-    min-width: 650px;
     background: linear-gradient(90deg,#1e2d6d, #341E4F,#1e2d6d,#341E4F);
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;
     border: 2px solid white;
     border-radius: 120px;
-    min-height: 400px;
     color: white;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 2;
 }
 
 .aboutMeContainer:hover
@@ -106,9 +77,10 @@ button
     animation: gradientMove 10s ease infinite;
     border: 2px solid white;
     border-radius: 120px;
-    min-height: 400px;
     color: white;
-    min-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 .TechSkillsContainer:hover
@@ -116,16 +88,17 @@ button
     transform: scale(1.1);
 }
 
-.TechSkillsTitle
-{
-    font-size:5ch;
-    color:white;
+
+.aboutMe > div:nth-child(1) {
+    flex: 0 0 350px;
 }
 
-.TechSkillsParagraph
-{
-    font-size:3ch;
-    color:white;
+.aboutMe > div:nth-child(2) {
+    flex: 3;
+}
+
+.aboutMe > div:nth-child(3) {
+    flex: 2;
 }
 
 button:hover
@@ -134,12 +107,11 @@ button:hover
     opacity: 100%;
     color:white;
     background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .textImageInline
 {
-    
     display: flex;
 }
 
@@ -148,7 +120,6 @@ button:hover
     margin-top: 140px;
     background-color: #1a486b;
     overflow: hidden;
-    width: 100vw;
 }
 
 .video-track 
@@ -176,9 +147,6 @@ iframe:hover
     transform: scale(1.05);
 }
 
-:root {
-    --panel-width: 320px;
-}
 
 .portrait
  {
@@ -187,7 +155,6 @@ iframe:hover
 
 .portrait img {
     border-radius: 120px;
-    min-height: 400px;
     width: 100%;
     height: auto;
     display: block;
@@ -244,37 +211,26 @@ iframe:hover
 
 .portraitPanel {
     border-radius: 100px;
-    width: min(320px, 40vw);
-}
-
-.portrait img {
     width: 100%;
-    height: auto;
-    display: block;
 }
 
-#aboutMe {
+.aboutMe {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.aboutMeText {
-    background-image:linear-gradient(130deg,#1b2968 0%, #341E4F 100%);
-    border: 2px solid white;
-    border-radius: 120px;
-    color: white;
-}
-
-.aboutMeText h3 {
-    font-size: 5ch;
-    margin-bottom: 10px;
-}
-
-.aboutMeText:hover
+h3
 {
-    transform: scale(1.05);
+    font-size:40px;
+}
+
+h4
+{
+    font-size:25px;
 }
 
 button

@@ -56,14 +56,14 @@
     </section>
 
         <div class =centerRow>
-            <section id = "mainTitle">
+            <section id = "mainTitle" class = "mainTitle">
                 <div>
                     PROJECT SHOWCASE
                 </div>
             </section>
         </div>
 
-        <section id = "Project1">
+        <section id = "Project1" class="project">
             <div class = "centre">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
@@ -86,15 +86,11 @@
                 </iframe>
             </div>
             <div class = "centre">
-                <div class = "DescriptionParaTitle">
-                    About
-                </div>
-            </div>
-            <div class = "centre">
                 <div class = "DescriptionPara">
+                    <h2>About</h2>
                     <p>Escape the Labrynth is a 2D puzzle game written using the Unity Game Engine. The player is a shapeshifting character attempting to escape a laboratory. 
 The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 specific mechanics and building on the previous levels with fairly simple puzzles and the final level combining all previous mechanics.
- </p>
+                    </p>
                 </div>
             </div>
 
@@ -104,13 +100,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown1">
+                <div id = "MechanicsDropDown1" class = "MechanicsDropDown">
                     <div class = centre> 
                         <button onclick="ToggleDropDown('ShapeShiftDropDown')" class = "DropdownSubButton">Shapeshifting</button>
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "ShapeShiftDropDown">
+                            <div id = "ShapeShiftDropDown" class = "MechanicDropDownWrapper">
                                 <div class =centre>
                                     <iframe
                                         width="500"
@@ -141,7 +137,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "ShootingDropDown">
+                            <div id = "ShootingDropDown" class = "MechanicDropDownWrapper">
                                 <div class =centre>
                                     <iframe
                                         width="500"
@@ -175,7 +171,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "ClimbingDropDown">
+                            <div id = "ClimbingDropDown" class = "MechanicDropDownWrapper">
                                 <div class =centre>
                                     <iframe
                                         width="500"
@@ -209,7 +205,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "EnemyAIDropDown">
+                            <div id = "EnemyAIDropDown" class = "MechanicDropDownWrapper">
                                 <div class =centre>
                                     <iframe
                                         width="500"
@@ -254,10 +250,31 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "ProceduralGenerationDropDown">
-                                    <div>Mechanic Image/Video here</div>
-                                    <div>description of how it works</div>
-                                    <div>code snippet if required</div>
+                            <div id = "ProceduralGenerationDropDown" class = "MechanicDropDownWrapper">
+                                <div class =centre>
+                                    <iframe
+                                        width="500"
+                                        height="300"
+                                        src=""
+                                        title="Gameplay Demo"
+                                        allow="autoplay; encrypted-media"
+                                        loop="true"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <br>
+                                <div class =centre>
+                                    <div class = "CodeDescriptionPara"  >
+                                        <div>Descrpition snippet</div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class =centre>
+                                    <div class = imgHover >
+                                        <div><img src = "csProceduralGenCode.png"></div>
+                                    </div>
+                                </div>
+                                <br>
                             </div>
                         </div>    
                     </div>
@@ -267,7 +284,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
     </div>
 
 
-        <section id = "Project2">
+        <section id = "Project2" class="project">
             <div class = "centre">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/MilitaryDefence" target="_blank">
@@ -290,12 +307,10 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </iframe>
             </div>
             <div class = "centre">
-                <div class = "DescriptionParaTitle">
-                    About
+                <div class = "DescriptionPara">
+                    <h2>About</h2>
+                    Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...
                 </div>
-            </div>
-            <div class = "centre">
-                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
             </div>
 
             <div class = "centre">
@@ -304,13 +319,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown2">
+                <div id = "MechanicsDropDown2"  class = "MechanicsDropDown">
                     <div class = centre> 
                         <button onclick="ToggleDropDown('temp1')" class = "DropdownSubButton">temp1</button>
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "temp1">
+                            <div id = "temp1"  class = "MechanicsDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
@@ -321,7 +336,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
         </section>
 
-    <section id = "Project3">
+    <section id = "Project3" class="project">
         <div class = "centre">
                     <div class = "logo">
                         <a href = "https://github.com/dunkledan/Open-GL-Orbit-Simulation" target="_blank">
@@ -344,12 +359,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </iframe>
             </div>
             <div class = "centre">
-                <div class = "DescriptionParaTitle">
-                    About
+                <div class = "DescriptionPara">
+                    <h2>About</h2>
+                    <p> description para.description para.description para.description para.description para.description para.
+                    </p>
                 </div>
-            </div>
-            <div class = "centre">
-                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
             </div>
 
             <div class = "centre">
@@ -358,13 +372,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown3">
+                <div id = "MechanicsDropDown3" class = "MechanicsDropDown">
                     <div class = centre> 
                         <button onclick="ToggleDropDown('temp2')" class = "DropdownSubButton">temp1</button>
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "temp2">
+                            <div id = "temp2"  class = "MechanicsDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
@@ -375,7 +389,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
     </section>
 
-    <section id = "Project4">
+    <section id = "Project4" class="project">
         <div class = "centre">
                     <div class = "logo">
                         <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
@@ -398,12 +412,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </iframe>
             </div>
             <div class = "centre">
-                <div class = "DescriptionParaTitle">
-                    About
+                <div class = "DescriptionPara">
+                    <h2>About</h2>
+                    <p> description para.description para.description para.description para.description para.description para.
+                    </p>
                 </div>
-            </div>
-            <div class = "centre">
-                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
             </div>
 
             <div class = "centre">
@@ -412,13 +425,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown4">
+                <div id = "MechanicsDropDown4"  class = "MechanicsDropDown">
                     <div class = centre> 
                         <button onclick="ToggleDropDown('temp3')" class = "DropdownSubButton">temp1</button>
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "temp3">
+                            <div id = "temp3"  class = "MechanicsDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>
@@ -429,7 +442,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
     </section>
 
-    <section id = "Project5">
+    <section id = "Project5" class="project">
         <div class = "centre">
                     <div class = "logo">
                         <a href = "https://github.com/M4R5-PH0B05/clamber" target="_blank">
@@ -451,13 +464,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                     allowfullscreen>
                 </iframe>
             </div>
+            
             <div class = "centre">
-                <div class = "DescriptionParaTitle">
-                    About
+                <div class = "DescriptionPara">
+                    <h2>About</h2>
+                    <p> description para.description para.description para.description para.description para.description para.
+                    </p>
                 </div>
-            </div>
-            <div class = "centre">
-                <div class = "DescriptionPara">Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...Escape the labrythn is a ...</div>
             </div>
 
             <div class = "centre">
@@ -466,13 +479,13 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div>
                 <div class = centerRow>
-                <div id = "MechanicsDropDown5">
+                <div id = "MechanicsDropDown5"  class = "MechanicsDropDown">
                     <div class = centre> 
                         <button onclick="ToggleDropDown('temp4')" class = "DropdownSubButton">temp1</button>
                     </div>
                     <div class = centre>
                         <div>
-                            <div id = "temp4">
+                            <div id = "temp4"  class = "MechanicsDropDown">
                                     <div>Mechanic Image/Video here</div>
                                     <div>description of how it works</div>
                                     <div>code snippet if required</div>

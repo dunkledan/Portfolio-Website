@@ -94,7 +94,7 @@ button:hover
     transform: scale(1.03);
 }
 
-#mainTitle
+.mainTitle
 {
     font-style: bold;
     border-radius: 10px;
@@ -106,43 +106,17 @@ button:hover
     font-size: 50px;
 }
 
-#mainTitle:hover
+.mainTitle:hover
 {
     transform: scale(1.1);
 }
 
-#Project1
+.project
 {
     position: relative;
-    margin-top: 20%;
-    scale: 170%;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
-
-#Project2
-{
-    position: relative;
-    margin-top: 50%;
-    scale: 170%;
-}
-
-#Project3
-{
-    margin-top: 80%;
-    scale: 170%;
-}
-
-#Project4
-{
-    margin-top: 110%;
-    scale: 170%;
-}
-
-#Project5
-{
-    margin-top: 110%;
-    scale: 200%;
-}
-
 
 .Project1Title
 {
@@ -242,41 +216,12 @@ iframe:hover
     background-color: 	rgb(211, 211, 211);
 }
 
-#MechanicsDropDown1
+.MechanicsDropDown
 {
     width:20%;
     margin: 0 auto;
     display: none;
 }
-
-#MechanicsDropDown2
-{
-    width:20%;
-    margin: 0 auto;
-    display: none;
-}
-
-#MechanicsDropDown3
-{
-    width:20%;
-    margin: 0 auto;
-    display: none;
-}
-
-#MechanicsDropDown4
-{
-    width:20%;
-    margin: 0 auto;
-    display: none;
-}
-
-#MechanicsDropDown5
-{
-    width:20%;
-    margin: 0 auto;
-    display: none;
-}
-
 
 .centerRow
 {
@@ -299,52 +244,8 @@ iframe:hover
     text-align: center;
 }
 
-#ShapeShiftDropDown
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
 
-#ShootingDropDown
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#ClimbingDropDown
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#MovingTilesDropDown
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#EnemyAIDropDown
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#ProceduralGenerationDropDown
+.MechanicDropDownWrapper
 {
     background-image: linear-gradient(40deg,#202e3b, #678081 100%);
     display:none;
@@ -414,40 +315,4 @@ iframe:hover
     opacity: 100%;
     color:white;
     background: linear-gradient(45deg,#57C785 0%, #EDDD53 100%);
-}
-
-#temp1
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#temp2
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#temp3
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#temp4
-{
-    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
-    display:none;
-    color:white;
-    border-radius: 10px;
-    padding: 20px;
 }
