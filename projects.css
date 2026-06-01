@@ -254,6 +254,51 @@ iframe:hover
     padding: 20px;
 }
 
+#ShootingDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#ClimbingDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#MovingTilesDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#EnemyAIDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#ProceduralGenerationDropDown
+{
+    background-image: linear-gradient(40deg,#202e3b, #678081 100%);
+    display:none;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .logoTopContainer
 {
     height: 30%;
