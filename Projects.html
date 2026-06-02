@@ -147,8 +147,12 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = imgHover >
+                                                <h3>Player class</h3>
                                                 <div><img src = "csShootCode.png"></div>
+                                                <h3>Bullet class</h3>
                                                 <div><img src = "csShootCode2.png"></div>
+                                                <h3>Lever class</h3>
+                                                <div><img src = "csShootCode3.png"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -156,7 +160,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             </div>
 
                             <div class = centre>
-                                <button onclick="ToggleDropDown('ClimbingDropDown')" class = "DropdownSubButton">climbing</button>
+                                <button onclick="ToggleDropDown('ClimbingDropDown')" class = "DropdownSubButton">Climbing</button>
                             </div>
                             <div class = centre>
                                 <div>
@@ -181,7 +185,9 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = imgHover >
+                                                <h3>Player class</h3>
                                                 <div><img src = "csClimbCode.png"></div>
+                                                <h3>Ladder class</h3>
                                                 <div><img src = "csClimbCode2.png"></div>
                                             </div>
                                         </div>
@@ -216,11 +222,6 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <div class =centre>
                                             <div class = imgHover >
                                                 <div><img src = "csAICode.png"></div>
-                                            </div>
-                                        </div>
-                                        <div class =centre>
-                                            <div class = "CodeDescriptionPara"  >
-                                                <div>Descrpition snippet 2</div>
                                             </div>
                                         </div>
                                         <br>
@@ -313,12 +314,12 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div>
                 <div class = centerRow>
                     <div id = "MechanicsDropDown2"  class = "MechanicsDropDown">
-                        <div class = centre> 
-                            <button onclick="ToggleDropDown('temp1')" class = "DropdownSubButton">temp1</button>
+                        <div class = "centre"> 
+                            <button onclick="ToggleDropDown('ShootingMP')" class = "DropdownSubButton">Shooting</button>
                         </div>
-                        <div class = centre>
+                        <div class = "centre">
                             <div>
-                                <div id = "temp1"  class = "MechanicDropDownWrapper">
+                                <div id = "ShootingMP"  class = "MechanicDropDownWrapper">
                                     <div class =centre>
                                         <iframe
                                             width="500"
@@ -344,11 +345,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             </div>
                         </div>
                         <div class = centre> 
-                            <button onclick="ToggleDropDown('temp2')" class = "DropdownSubButton">temp2</button>
+                            <button onclick="ToggleDropDown('Tower Placement')" class = "DropdownSubButton">Tower Placement</button>
                         </div>
                         <div class = centre>
                             <div>
-                                <div id = "temp2"  class = "MechanicDropDownWrapper">
+                                <div id = "Tower Placement"  class = "MechanicDropDownWrapper">
                                     <div class =centre>
                                         <iframe
                                             width="500"
@@ -373,6 +374,129 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                 </div>
                             </div>
                         </div>
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('Enemy Pathing')" class = "DropdownSubButton">Enemies</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "Enemy Pathing"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('Round System')" class = "DropdownSubButton">Round System</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "Round System"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('Health Over Time')" class = "DropdownSubButton">Health Over Time</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "Health Over Time"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = centre> 
+                            <button onclick="ToggleDropDown('Shop System')" class = "DropdownSubButton">Shop System</button>
+                        </div>
+                        <div class = centre>
+                            <div>
+                                <div id = "Shop System"  class = "MechanicDropDownWrapper">
+                                    <div class =centre>
+                                        <iframe
+                                            width="500"
+                                            height="300"
+                                            src=""
+                                            title="Gameplay Demo"
+                                            allow="autoplay; encrypted-media"
+                                            loop="true"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <br>
+                                    <div class =centre>
+                                        <div class = "CodeDescriptionPara"  >
+                                            <div>Description here</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class = imgHover >
+                                        <div><img src = "MP.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -937,5 +1061,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
     </section>
 
 </div>
+
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
+
 </body>
 </html>
