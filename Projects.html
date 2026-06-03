@@ -51,6 +51,7 @@
         </div>
 
         <section id = "Project1" class="project">
+                
             <div class = "centre">
                 <div class = "TextLogoInline">
                     <div class = "logo">
@@ -63,6 +64,7 @@
                         </a>
                     </div>
                 </div>
+            </div>
             <div class = "videoContainer">
                 <iframe
                     width="500"
@@ -85,6 +87,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown1')">Core Mechanics</button>
+            </div>
+            <div class = "centre">
+                <a href="fullbg.jpg" download>
+                    <button class = "DownLoadButton">Download Build</button>
+                </a>
             </div>
 
             <div>
@@ -141,7 +148,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>Descrpition snippet</div>
+                                                <div>The shooting mechanic works using a combination of 4 different classes: the player bullet and lever class. The Player handles an input to decide where to fire and which direction to fire a bullet instance. The bullet class handles its own life time and the lever class detects a bullet instance collision to open a given door using the door class to handle the properies of the door.</div>
                                             </div>
                                         </div>
                                         <br>
@@ -179,7 +186,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>Descrpition snippet</div>
+                                                <div>The climbing mechanic handles scene changes between different layers of a given level. This mechanic is used for interesting puzzles to avoid enemies or get to inaccessable sections of the game. This uses coroutine timers to determine climbing time and ensure the player does not move when climbing. The ladder class also sets the animator state machine to be in the climbing state when appropriate to handle animation and other properties of different states where appropriate.</div>
                                             </div>
                                         </div>
                                         <br>
@@ -215,7 +222,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>Descrpition snippet</div>
+                                                <div>The enemy AI in this game uses a 2D nav mesh to determine paths that enemies can walk on. There are 3 different types of enemy in the game so far including the base enemy. These enemies include a patrol behaviour, a patrol and chase behaviour, and a patrol and shoot behaviour. The patrol And enemy classes are only able to see the player with line of sight in a radius, this is achieved using raycasting between the player and enemy to make sure the line of sight is appropriately used. The patrolling behaviour uses 2 target points for the enemy to patrol between which can be expanded for as many patrol points as required.</div>
                                             </div>
                                         </div>
                                         <br>
@@ -254,7 +261,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>Descrpition snippet</div>
+                                                <div>The background tiles for this game are procedurally generated. This is done using unity rule tiles on a tile map and the perlin noise function with sample values to determine the specific tile that should be place at a given point. This was an interesting problem to solve as it was far more mathematical than most other mechanics for this project.</div>
                                             </div>
                                         </div>
                                         <br>
@@ -309,6 +316,12 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown2')">Core Mechanics</button>
+            </div>
+            
+            <div class = "centre">
+                <a href="fullbg.jpg" download>
+                    <button class = "DownLoadButton">Download Build</button>
+                </a>
             </div>
             
             <div>
@@ -540,6 +553,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown3')">Core Mechanics</button>
             </div>
+            <div class = "centre">
+                <a href="fullbg.jpg" download>
+                    <button class = "DownLoadButton">Download Build</button>
+                </a>
+            </div>
 
             <div id = "MechanicsDropDown3"  class = "MechanicsDropDown">            
                 <div class = centre> 
@@ -562,7 +580,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>The camera system in this project is fairly standard using WASD to alter the Eye Centre and Up values of a camera class which GLUT uses to look at the correct position. This created a smooth sense of camera movement throughout the world, however to give more control I also implimented mouse movement to look in an appropriate direction, using some more complex mathematical formulas to calculate angles based on a 2D mouse screen position.</div>
                                 </div>
                             </div>
                             <br>
@@ -784,6 +802,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown4')">Core Mechanics</button>
             </div>
+            <div class = "centre">
+                <a href="fullbg.jpg" download>
+                    <button class = "DownLoadButton">Download Build</button>
+                </a>
+            </div>
 
             <div id = "MechanicsDropDown4"  class = "MechanicsDropDown">           
                 <div class = centre> 
@@ -989,6 +1012,11 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
 
             <div class = "centre">
                 <button class = "DropdownButton"  onclick="ToggleDropDown('MechanicsDropDown5')">My contributions</button>
+            </div>
+            <div class = "centre">
+                <a href="fullbg.jpg" download>
+                    <button class = "DownLoadButton">Download Build</button>
+                </a>
             </div>
 
             <div>

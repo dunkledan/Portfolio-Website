@@ -16,6 +16,11 @@ body::-webkit-scrollbar
   display: none; 
 }
 
+p
+{
+    font-size: 25px;
+}
+
 
 h1
 {
@@ -103,6 +108,11 @@ button
 .aboutMeContainer:hover
 {
     transform: scale(1.1);
+}
+
+li
+{
+    font-size: 20px;
 }
 
 .TechSkillsContainer
@@ -284,7 +294,6 @@ button
 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-columns: 2fr 1fr;
     padding: 10px;
 }
 
