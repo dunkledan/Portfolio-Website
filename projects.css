@@ -270,7 +270,7 @@ iframe:hover
 
 .DownLoadButton
 {
-    margin-top: 100px;
+    transform:translateY(15px);
     border: 5px solid white;
     border-radius: 30px;
     padding:20px;
