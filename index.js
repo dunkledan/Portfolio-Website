@@ -1,8 +1,3 @@
-function GoToHome()
-{
-    location.replace("/index.html");
-}
-
 function GoToSection(section)
 {
     const element = document.getElementById(section);
