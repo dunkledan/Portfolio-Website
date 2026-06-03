@@ -1,8 +1,3 @@
-function goToProjects()
-{
-    location.replace("/Projects.html");
-}
-
 function GoToHome()
 {
     location.replace("/index.html");
