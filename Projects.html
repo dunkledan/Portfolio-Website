@@ -838,7 +838,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>SDL uses event based input to detect hardware input events. For this game I needed to ensure input was handled correctly across different platforms. This involved reading joypad inputs, console button inputs, keyboard inputs, and mouse inputs, as all of these are used to replicate the same system of controls across the different devices. The code for menu selction and character controll handlign can be seen below.</div>
+                                    <div>SDL uses event based input to detect hardware input events. For this game I needed to ensure input was handled correctly across different platforms. This involved reading joypad inputs, console button inputs, keyboard inputs, and mouse inputs, as all of these are used to replicate the same system of controls across the different devices. The code for menu selction and character control handling can be seen below.</div>
                                 </div>
                             </div>
                             <br>
@@ -906,7 +906,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara">
-                                    <div>Description here</div>
+                                    <div>The collisions in this game's framework are handled with 3 main types from a collision instance: a box collision, circle collision and tilemap collision. Tile map collision is the most complex requiing a world coordinate to tilemap coordinate. In addition tot his the collision box of both the colliding gameobject and adjacent tiles, to detect a specific collision.</div>
                                 </div>
                             </div>
                             <br>
@@ -940,7 +940,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>In scroll to the moon there are multiple menu screens and multiple level screens. For this reason a screen manager and multiple game screen classes are implimented and swapped between using custom SDL user events. Instances of these game classes encapsulate instances of gameobjects and other classes in the game to effficiently handle these different screens and textures on each of these screens. Code for the switching and structure of these gamescreens can be seen below.</div>
                                 </div>
                             </div>
                             <br>
