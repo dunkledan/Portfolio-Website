@@ -309,7 +309,7 @@ button
     padding-left: 50px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .topBand {
         height: auto;
@@ -368,5 +368,10 @@ button
     
     body {
         padding-top: 18vh;
+    }
+
+    .logoContainer {
+        margin: 0;
+        margin-top: 10px;
     }
 }

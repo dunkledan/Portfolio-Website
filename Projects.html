@@ -32,12 +32,12 @@
             </div>
             <div class = "gridLayoutContainer">
                 <button onclick = "window.location.href='index.html'" class = "homeButton Hoverbutton" >Back</button>
-                <button onclick = "GoToSection('menu')" class = "topButton Hoverbutton">Project Showcase</button>
-                <button onclick = "GoToSection('Project1')" class = "menuButton Hoverbutton">Escape The Labrynth</button>
-                <button onclick = "GoToSection('Project2')" class = "menuButton Hoverbutton">Military Defence</button>
-                <button onclick = "GoToSection('Project3')" class = "menuButton Hoverbutton">Orbit Simulation</button>
-                <button onclick = "GoToSection('Project4')" class = "menuButton Hoverbutton">Scroll To The Moon</button>
-                <button onclick = "GoToSection('Project5')" class = "menuButton Hoverbutton">Clamber</button>
+                <button onclick = "GoToSection('menu');if(screen.width < 980){ToggleSidebar();} " class = "topButton Hoverbutton">Project Showcase</button>
+                <button onclick = "GoToSection('Project1');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Escape The Labrynth</button>
+                <button onclick = "GoToSection('Project2');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Military Defence</button>
+                <button onclick = "GoToSection('Project3');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Orbit Simulation</button>
+                <button onclick = "GoToSection('Project4');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Scroll To The Moon</button>
+                <button onclick = "GoToSection('Project5');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Clamber</button>
             </div>
         </div>
     </section>
