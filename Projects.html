@@ -545,7 +545,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    <p> description para.description para.description para.description para.description para.description para.
+                    <p> This orbit simulation was created to understand the principles of the fixed function pipeline for graphics program using OpenGL 1.0 and FreeGLUT. The simulation features code to load RAW and TGA formatted texture files, load standard triangle OBJ files, scene lighting, important scene data structures, specific object selection and manipulation in the scene and dynamic user controlled movement.
                     </p>
                 </div>
             </div>
@@ -644,23 +644,29 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>The first important data structure used in the project is the Scene Graph, which organizes and manages the hierarchical structure of 3D objects in the scene in relation to a parent node defined when creating the scene graph instance. The code snippet below shows the use for this, by allowing for all objects in the graph to be selected at once using a pre order traversal of the structure. In this project this allowed for all planets to also be selected and manipulated when selecting the star object.</div>
                                 </div>
                             </div>
                             <br>
+                            <div class =centre>
                             <div class = imgHover >
                                 <div><img src = "Images/OrbitSceneGraphCode.png"></div>
                             </div>
+                            </div>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>The second core data structure is the linked list, which is used throughout the simulation instead of arrays or vectors, to allow for efficient and dynamic memory allocation for linked objects for example when handling the updates or rendering of all objects in the scene. The push node code and Node structure can be seen below.</div>
                                 </div>
                             </div>
+                            <div class =centre>
                             <div class = imgHover >
                                 <div><img src = "Images/OrbitLinkedListCode2.png"></div>
                             </div>
+                            </div>
+                            <div class =centre>
                             <div class = imgHover >
                                 <div><img src = "Images/OrbitLinkedListCode.png"></div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -686,12 +692,14 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>For this simulation I wanted the ability for the user to be able to select and manipulate individual objects within the scene, this being the planets. For this I implimented a raycasting system using the glut screen coordinates, world position and radius of a given object and depth testing to determine which object to be selected. The raycast code can be seen below with the selection logic itself mostly contained in a separate function to maintain modularity. </div>
                                 </div>
                             </div>
                             <br>
+                            <div class =centre>
                             <div class = imgHover >
                                 <div><img src = "Images/OrbitObjectSelectCode.png"></div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -717,19 +725,21 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>Loading and rendering objects was a complicated process as partly outlined in the .obj loader section. One part of loading these objects is texture loading in different formats, below is the RAW texture loader using point sampling which is then wrapped stored via incremental ID and wrapped around the appropriate objects.</div>
                                 </div>
                             </div>
                             <br>
+                            <div class =centre>
                             <div class = imgHover >
-                                <div><img src = "Images/OrbitRawCode.png"></div>
+                                <img src = "Images/OrbitRawCode.png">
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>  
 
                 <div class = centre> 
-                        <button onclick="ToggleDropDown('Lighting')" class = "DropdownSubButton">Lighting</button>
+                    <button onclick="ToggleDropDown('Lighting')" class = "DropdownSubButton">Lighting</button>
                 </div>
                 <div class = centre>
                     <div>
@@ -748,12 +758,14 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Description here</div>
+                                    <div>Lighting objects graphically required two major elements. The lighting component and the material components. The lighting component is used to determine the direction and position of lights in the scene, whereas the material component is used to determine the way light is refelcted off of the specfiic object the material is applied to.</div>
                                 </div>
                             </div>
                             <br>
-                            <div class = imgHover >
-                                <div><img src = "Images/OrbitmaterialLightingStructsCode.png"></div>
+                            <div class =centre>
+                            <div class = "imgHover" >
+                                <img src = "Images/OrbitmaterialLightingStructsCode.png">
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1083,6 +1095,29 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                 </div>  
             </div>
             </div>
+
+            <div class = "centre">
+                <button class = "DropdownButton"  onclick="ToggleDropDown('TheTeam')">The Team</button>
+            </div>
+
+            <div>
+                <div class = centerRow>
+                <div id = "TheTeam"  class = "MechanicsDropDown">
+                    <div class = centre> 
+                        <button  class = "DropdownSubButton"><a href="" target="_blank">Gameplay Programmer: Daniel Shepherd</a></button>
+                    </div>
+                    <div class = centre> 
+                        <button  class = "DropdownSubButton"><a href="https://rosetrussler1.wixsite.com/portfolio" target="_blank">Gameplay Programmer: Rose Trussler</a></button>
+                    </div>
+                    <div class = centre> 
+                        <button  class = "DropdownSubButton"><a href="https://www.artstation.com/kosbugs" target="_blank">Concept Artist & Animator: Kota Brown</a></button>
+                    </div>
+                    <div class = centre> 
+                        <button  class = "DropdownSubButton"><a href="https://marsphobos.com" target="_blank">Sound designer & General Programmer: Morgan Bennett.</a></button>
+                    </div>
+                </div>
+            </div>
+
             <div class = "centre">
                 <a href="Images/fullbg.jpg" download>
                     <button class = "DownLoadButton">Download Build</button>
