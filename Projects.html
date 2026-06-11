@@ -38,6 +38,7 @@
                 <button onclick = "GoToSection('Project3');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Orbit Simulation</button>
                 <button onclick = "GoToSection('Project4');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Scroll To The Moon</button>
                 <button onclick = "GoToSection('Project5');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Clamber</button>
+                <button onclick = "GoToSection('ComingSoon');if(screen.width < 980){ToggleSidebar();}" class = "soonButton Hoverbutton">Coming Soon</button>
             </div>
         </div>
     </section>
@@ -341,7 +342,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>Shooting functions using a combination of two major blueprints handling two different aspects of the shooting mechanic. The weapon controller blueprint for a given weapon creates an instance of a bullet blueprint class when appropriate with a velocity position and rotation dependant on where the player and thier mouse is. The projectile Blueprint class itself handles its own audio, particles and lifespan and damage to other actors in the scene to create the bullet hitting effect.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -374,7 +375,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>Tower placement was one of the most complex mechanics in the game, requiring interaction between UI elements, different world scene actors, the score system and appropriate mouse raycasting. The system works by spawning a new instance of the bought tower if the player has the correct amount of currency, at this point a new tower instance is continously kept on the mouse position on the nearest object on the screen until the left click button is pressed to place the tower, at which point the towers will begin to shoot at the closest enemy to them that is in range determined by a large trigger collision box.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -407,7 +408,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>Military defence has three types of enemies, each with unique behaviours and stats. Enemies all inherit from the base enemy class to allow all enemies to follow a navigation path for the level and take some amount of lives upon reaching the end of the track. These enemies appear at different points throughout the rounds, increasing in difficulty as the game goes on until the final boss round where all enemy types will be spawned. The second round enemies have the ability to aim at and shoot the player for an extra level of difficulty, the boss has inflated health and spawns both types of enemies on a timer until defeated or killing the player. The blueprints for all of these mechanics are shown below.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -440,7 +441,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>Military Defence features 3 rounds consisting of different enemy waves and increasing difficulty.  Each round uses a spawning timer to spawn a set amount of a set enemy class instance at the start of the track which navigate to the end of the track. When the final enemies are spawned the round number is incremented and enemies stop spawning. The first round blueprint logic is below.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -471,7 +472,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>The health over time mechanics in Military defence involve blueprint class isntances that deal damage or heal the player in intervals using timers. These times and amount healed in that time is editable and is used for lava and a healing pool within the level.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -502,7 +503,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Description here</div>
+                                            <div>The shop system is used to allow the players to gradually become more powerful by purchasing new towers and weapons. Currency is collected by killing enemies each round wit heach enemy having a set score asociated with it. The shop can then be used to purchase these weapons only when the player has enough money. If the purchase is a tower the  tower system is utilised (See Tower Placement section) otherwise a weapon pickup is spawned next to the shop terminal for the player to pick up.</div>
                                         </div>
                                     </div>
                                     <br>
@@ -1183,6 +1184,53 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             </div>
             </div>
     </section>
+
+
+    <section id = "ComingSoon"></section>
+        <div onclick="ToggleDropDown('Project6');ToggleDropDown('Project7');" class = "centre  ComingSoon">
+            <button  class = "Project1Title">COMING SOON</button>
+        </div>
+        <div class = centre>
+            <section id = "Project6" class="project6">
+                <div class = "centre">
+                        <div class = "TextLogoInline">
+                            <div class = "logo">
+                                <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
+                                    <img src = "Images/githublogo.png">
+                                </a>
+                            </div>
+                                <button class = "Project1Title">Retail Of Horror (working title)</button>
+                            </a>
+                        </div>
+                    </div>
+                <div class = "centre">
+                    <div class = "DescriptionPara">
+                        <h2>About</h2>
+                        <p>Retail of Horror will be a resourec management focused horror game in which you play as a retail worker attempting to escape a store full of monsters with your boss alerting the monsters as to where you are if your resources or tasks are insufficient. This will be built Using Unreal engine 5. Expect more information in September 2026.
+                    </div>
+            </section>
+        </div>
+        <div class = centre>
+            <section id = "Project7" class="project6">
+                <div class = "centre">
+                        <div class = "TextLogoInline">
+                            <div class = "logo">
+                                <a href = "https://github.com/StaffsUniGames/gdev40003-25-bpd-artefact-dunkledan" target="_blank">
+                                    <img src = "Images/githublogo.png">
+                                </a>
+                            </div>
+                                <button class = "Project1Title">Mansion Mimic Hunt</button>
+                            </a>
+                        </div>
+                    </div>
+                <div class = "centre">
+                    <div class = "DescriptionPara">
+                        <h2>About</h2>
+                        <p>Mansion Mimic Hunt will be a top down pattern recognition game in which you play as an investigator for a mansion with strange occurances going on, you must find a tile that is out of place in every room of the mansion by spotting certain clues within different rooms. This will be built using pygame. Expect more information in September 2026.
+            </section>
+        </div>
+    </section>>
+
 </div>
 <div id="imageModal" class="modal">
     <span class="close">&times;</span>
