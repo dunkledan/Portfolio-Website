@@ -141,7 +141,7 @@ li
 }
 
 .aboutMe > div:nth-child(2) {
-    flex: 3;
+    flex: 2;
 }
 
 .aboutMe > div:nth-child(3) {
@@ -157,6 +157,36 @@ button:hover
     transform: scale(1.2);
 }
 
+.BigProjectsButton
+{
+    margin-top: 3vh;
+    display: flex;
+    width: 70vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-left: 15vw;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#00a2ff, #7300ff,#002fff,#7300ff);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+.FlashyVideoDemo
+{
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    scale: 250%;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+
 .textImageInline
 {
     display: flex;
@@ -165,7 +195,7 @@ button:hover
 
 .video-container 
 {
-    margin-top: 120px;
+    padding: 10px;
     background-color: #1a486b;
     overflow: hidden;
 }
@@ -211,7 +241,6 @@ iframe:hover
 .logoContainer
 {
     gap: 0.5rem;
-
     flex-shrink: 0;
     display:flex;
     justify-content: center;
@@ -266,11 +295,12 @@ iframe:hover
 }
 
 .aboutMe {
+    margin-top: 10vh;
     display: flex;
     gap: 40px;
     align-items: flex-start;
     width: 100%;
-    padding: 10px;
+    padding: 5vh;
     box-sizing: border-box;
 }
 
