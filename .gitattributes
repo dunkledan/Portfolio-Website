@@ -2,3 +2,8 @@
 * text=auto
 .zip filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+EscapeTheLabrynthBuild.zip filter=lfs diff=lfs merge=lfs -text
+Clamber.zip filter=lfs diff=lfs merge=lfs -text
+OrbitSimulator.zip filter=lfs diff=lfs merge=lfs -text
+MilitaryDefence.zip filter=lfs diff=lfs merge=lfs -text
+Scroll[[:space:]]To[[:space:]]The[[:space:]]moon.zip filter=lfs diff=lfs merge=lfs -text
