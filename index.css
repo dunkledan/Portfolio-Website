@@ -443,4 +443,21 @@ button
         margin-top: 10px;
     }
     
+    .BigProjectsButton
+        {
+        margin-top: 3vh;
+        display: flex;
+        width: 70vw;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin-left: 15vw;
+        margin-bottom: 10vh;
+        border-radius: 10px;
+        background: linear-gradient(90deg,#00a2ff, #7300ff,#002fff,#7300ff);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+    }
+
 }
