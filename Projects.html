@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class = "gridLayoutContainer">
-                <button onclick = "window.location.href='index.html'" class = "homeButton Hoverbutton" >Back</button>
-                <button onclick = "GoToSection('menu');if(screen.width < 980){ToggleSidebar();} " class = "topButton Hoverbutton">Project Showcase</button>
+                <button onclick = "window.location.href='index.html'" class = "homeButton Hoverbutton" >Home</button>
+                <button onclick = "GoToSection('menu');if(screen.width < 980){ToggleSidebar();} " class = "topButton Hoverbutton">Top</button>
                 <button onclick = "GoToSection('Project1');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Escape The Labrynth</button>
                 <button onclick = "GoToSection('Project2');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Military Defence</button>
                 <button onclick = "GoToSection('Project3');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Orbit Simulation</button>
@@ -81,9 +81,7 @@
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    <p>Escape the Labrynth is a 2D puzzle game written using the Unity Game Engine. The player is a shapeshifting character attempting to escape a laboratory. 
-The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 specific mechanics and building on the previous levels with fairly simple puzzles and the final level combining all previous mechanics.
-                    </p>
+                    <p>Escape the Labrynth is a 2D puzzle game written using the Unity Game Engine. The player is a shapeshifting character attempting to escape a laboratory. The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 specific mechanics and building on the previous levels with fairly simple puzzles and the final level combining all previous mechanics. </p>
                 </div>
             </div>
 
@@ -115,7 +113,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses determines this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which is active and other relevant properties for that state.</div>
+                                                <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses determines this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which is active and other relevant properties for that state. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -147,7 +145,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The shooting mechanic works using a combination of 4 different classes: the player bullet and lever class. The Player handles an input to decide where to fire and which direction to fire a bullet instance. The bullet class handles its own life time and the lever class detects a bullet instance collision to open a given door using the door class to handle the properies of the door.</div>
+                                                <div>The shooting mechanic works using a combination of 4 different classes: the player, bullet and lever class. The player handles an input to decide where to fire and which direction to fire a bullet instance. The bullet class handles its own life time and the lever class detects a bullet instance collision to open a given door using the door class to handle the properies of the door. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -186,7 +184,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The climbing mechanic handles scene changes between different layers of a given level. This mechanic is used for interesting puzzles to avoid enemies or get to inaccessable sections of the game. This uses coroutine timers to determine climbing time and ensure the player does not move when climbing. The ladder class also sets the animator state machine to be in the climbing state when appropriate to handle animation and other properties of different states where appropriate.</div>
+                                                <div>The climbing mechanic handles scene changes between different layers of a given level. This mechanic is used for interesting puzzles to avoid enemies or get to inaccessable sections of the game. This uses coroutine timers to determine climbing time and ensure the player does not move when climbing. The ladder class also sets the animator state machine to be in the climbing state when appropriate to handle animation and other properties of different states where appropriate. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -223,7 +221,8 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The enemy AI in this game uses a 2D nav mesh to determine paths that enemies can walk on. There are 3 different types of enemy in the game so far including the base enemy. These enemies include a patrol behaviour, a patrol and chase behaviour, and a patrol and shoot behaviour. The patrol And enemy classes are only able to see the player with line of sight in a radius, this is achieved using raycasting between the player and enemy to make sure the line of sight is appropriately used. The patrolling behaviour uses 2 target points for the enemy to patrol between which can be expanded for as many patrol points as required.</div>
+                                                <div>The enemy AI in this game uses a 2D nav mesh to determine paths that enemies can walk on. There are 3 different types of enemy in the game so far including the base enemy. These enemies include a patrol behaviour, a patrol and chase behaviour, and a patrol and shoot behaviour. The patrol and enemy classes are only able to see the player with line of sight in a radius, this is achieved using raycasting between the player and enemy to make sure the line of sight is appropriately used. The patrolling behaviour uses 2 target points for the enemy to patrol between which can be expanded for as many patrol points as required. 
+</div>
                                             </div>
                                         </div>
                                         <br>
@@ -314,8 +313,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    Military Defence is a top down 3D tower defence game built using Unreal Engine 5. It was created using a framework provided by my university, originally with a goal of creating a level prototype, however I designed this game to be very expandable in a similar way to other tower defence games rather than being level focusd. this version features 3 rounds with unique enemies and a fairly well balanced scoring system to gain upgrades and towers.
-                </div>
+                    Military Defence is a top down 3D tower defence game built using Unreal Engine 5. It was created using a framework provided by my university, originally with a goal of creating a level prototype, however I designed this game to be very expandable in a similar way to other tower defence games rather than being level focusd. This version features 3 rounds with unique enemies and a fairly well balanced scoring system to gain upgrades and towers. </div>
             </div>
 
             <div class = "centre">
@@ -346,7 +344,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Shooting functions using a combination of two major blueprints handling two different aspects of the shooting mechanic. The weapon controller blueprint for a given weapon creates an instance of a bullet blueprint class when appropriate with a velocity position and rotation dependant on where the player and thier mouse is. The projectile Blueprint class itself handles its own audio, particles and lifespan and damage to other actors in the scene to create the bullet hitting effect.</div>
+                                            <div>Shooting functions using a combination of two major blueprints handling two different aspects of the shooting mechanic. The weapon controller blueprint for a given weapon creates an instance of a bullet blueprint class when appropriate with a velocity position and rotation dependant on where the player and thier mouse is. The projectile blueprint class itself handles its own audio, particles and lifespan and damage to other actors in the scene to create the bullet hitting effect. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -380,7 +378,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Tower placement was one of the most complex mechanics in the game, requiring interaction between UI elements, different world scene actors, the score system and appropriate mouse raycasting. The system works by spawning a new instance of the bought tower if the player has the correct amount of currency, at this point a new tower instance is continously kept on the mouse position on the nearest object on the screen until the left click button is pressed to place the tower, at which point the towers will begin to shoot at the closest enemy to them that is in range determined by a large trigger collision box.</div>
+                                            <div>Tower placement was one of the most complex mechanics in the game, requiring interaction between UI elements, different world scene actors, the score system and appropriate mouse raycasting. The system works by spawning a new instance of the bought tower if the player has the correct amount of currency, at this point a new tower instance is continously kept on the mouse position on the nearest object on the screen until the left click button is pressed to place the tower, at which point the towers will begin to shoot at the closest enemy to them that is in range determined by a large trigger collision box. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -414,7 +412,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Military defence has three types of enemies, each with unique behaviours and stats. Enemies all inherit from the base enemy class to allow all enemies to follow a navigation path for the level and take some amount of lives upon reaching the end of the track. These enemies appear at different points throughout the rounds, increasing in difficulty as the game goes on until the final boss round where all enemy types will be spawned. The second round enemies have the ability to aim at and shoot the player for an extra level of difficulty, the boss has inflated health and spawns both types of enemies on a timer until defeated or killing the player. The blueprints for all of these mechanics are shown below.</div>
+                                            <div>Military defence has three types of enemies, each with unique behaviours and stats. Enemies all inherit from the base enemy class to allow all enemies to follow a navigation path for the level and take some amount of lives upon reaching the end of the track. These enemies appear at different points throughout the rounds, increasing in difficulty as the game goes on until the final boss round where all enemy types will be spawned. The second round enemies have the ability to aim at and shoot the player for an extra level of difficulty, the boss has inflated health and spawns both types of enemies on a timer until defeated or killing the player. The blueprints for all of these mechanics are shown below. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -436,7 +434,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Military Defence features 3 rounds consisting of different enemy waves and increasing difficulty.  Each round uses a spawning timer to spawn a set amount of a set enemy class instance at the start of the track which navigate to the end of the track. When the final enemies are spawned the round number is incremented and enemies stop spawning. The first round blueprint logic is below.</div>
+                                            <div>Military Defence features 3 rounds consisting of different enemy waves and increasing difficulty. Each round uses a spawning timer to spawn a set amount of a set enemy class instance at the start of the track which navigate to the end of the track. When the final enemies are spawned the round number is incremented and enemies stop spawning. The first round blueprint logic is below. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -468,7 +466,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>The health over time mechanics in Military defence involve blueprint class isntances that deal damage or heal the player in intervals using timers. These times and amount healed in that time is editable and is used for lava and a healing pool within the level.</div>
+                                            <div>The health over time mechanics in Military defence involve blueprint class isntances that deal damage or heal the player in intervals using timers. These times and amount healed in that time is editable and is used for lava and a healing pool within the level. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -500,7 +498,8 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>The shop system is used to allow the players to gradually become more powerful by purchasing new towers and weapons. Currency is collected by killing enemies each round wit heach enemy having a set score asociated with it. The shop can then be used to purchase these weapons only when the player has enough money. If the purchase is a tower the  tower system is utilised (See Tower Placement section) otherwise a weapon pickup is spawned next to the shop terminal for the player to pick up.</div>
+                                            <div>The shop system is used to allow the players to gradually become more powerful by purchasing new towers and weapons. Currency is collected by killing enemies each round wit heach enemy having a set score asociated with it. The shop can then be used to purchase these weapons only when the player has enough money. If the purchase is a tower the tower system is utilised (See Tower Placement section) otherwise a weapon pickup is spawned next to the shop terminal for the player to pick up. 
+</div>
                                         </div>
                                     </div>
                                     <br>
@@ -553,7 +552,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    <p> This orbit simulation was created to understand the principles of the fixed function pipeline for graphics program using C++, OpenGL 1.0 and FreeGLUT. The simulation features code to load RAW and TGA formatted texture files, load standard triangle OBJ files, scene lighting, important scene data structures, specific object selection and manipulation in the scene and dynamic user controlled movement.
+                    <p>This orbit simulation was created to understand the principles of the fixed function pipeline for graphics program using C++, OpenGL 1.0 and FreeGLUT. The simulation features code to load RAW and TGA formatted texture files, load standard triangle OBJ files, scene lighting, important scene data structures, specific object selection and manipulation in the scene and dynamic user controlled movement. 
                     </p>
                 </div>
             </div>
@@ -585,7 +584,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>The camera system in this project is fairly standard using WASD to alter the Eye Centre and Up values of a camera class which GLUT uses to look at the correct position. This created a smooth sense of camera movement throughout the world, however to give more control I also implimented mouse movement to look in an appropriate direction, using some more complex mathematical formulas to calculate angles based on a 2D mouse screen position.</div>
+                                    <div>The camera system in this project is fairly standard using WASD to alter the Eye Centre and Up values of a camera class which GLUT uses to look at the correct position. This created a smooth sense of camera movement throughout the world, however to give more control I also implimented mouse movement to look in an appropriate direction, using some more complex mathematical formulas to calculate angles based on a 2D mouse screen position. </div>
                                 </div>
                             </div>
                             <br>
@@ -608,7 +607,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>The Object Loader takes OBJ files and converts them into a format that can be used by the rendering engine. This is not a fully standardised solution however it interprets Vertices, Vertex Normals, Texture Coordinates and Face coordinates to load All triangle formatted vewrtex data from Obj files. In this project I then made planet and star models to load textures onto for the orbital simulation.</div>
+                                    <div>The Object Loader takes OBJ files and converts them into a format that can be used by the rendering engine. This is not a fully standardised solution however it interprets Vertices, Vertex Normals, Texture Coordinates and Face Coordinates to load all triangle formatted vertex data from OBJ files. In this project I then made planet and star models to load textures onto for the orbital simulation. </div>
                                 </div>
                             </div>
                             <br>
@@ -631,7 +630,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>The first important data structure used in the project is the Scene Graph, which organizes and manages the hierarchical structure of 3D objects in the scene in relation to a parent node defined when creating the scene graph instance. The code snippet below shows the use for this, by allowing for all objects in the graph to be selected at once using a pre order traversal of the structure. In this project this allowed for all planets to also be selected and manipulated when selecting the star object.</div>
+                                    <div>The first important data structure used in the project is the Scene Graph, which organizes and manages the hierarchical structure of 3D objects in the scene in relation to a parent node defined when creating the Scene Graph instance. The code snippet below shows the use for this, by allowing for all objects in the graph to be selected at once using a pre order traversal of the structure. In this project this allowed for all planets to also be selected and manipulated when selecting the star object. </div>
                                 </div>
                             </div>
                             <br>
@@ -680,7 +679,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>For this simulation I wanted the ability for the user to be able to select and manipulate individual objects within the scene, this being the planets. For this I implimented a raycasting system using the glut screen coordinates, world position and radius of a given object and depth testing to determine which object to be selected. The raycast code can be seen below with the selection logic itself mostly contained in a separate function to maintain modularity. </div>
+                                    <div>For this simulation I wanted the ability for the user to be able to select and manipulate individual objects within the scene, this being the planets. For this I implimented a raycasting system using the GLUTscreen coordinates, world position and radius of a given object and depth testing to determine which object to be selected. The raycast code can be seen below with the selection logic itself mostly contained in a separate function to maintain modularity. </div>
                                 </div>
                             </div>
                             <br>
@@ -702,7 +701,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Loading and rendering objects was a complicated process as partly outlined in the .obj loader section. One part of loading these objects is texture loading in different formats, below is the RAW texture loader using point sampling which is then wrapped stored via incremental ID and wrapped around the appropriate objects.</div>
+                                    <div>Loading and rendering objects was a complicated process as partly outlined in the .obj loader section. One part of loading these objects is texture loading in different formats, below is the RAW texture loader using point sampling which is then wrapped stored via incremental ID and wrapped around the appropriate objects. </div>
                                 </div>
                             </div>
                             <br>
@@ -724,7 +723,7 @@ The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 s
                             <br>
                             <div class =centre>
                                 <div class = "CodeDescriptionPara"  >
-                                    <div>Lighting objects graphically required two major elements. The lighting component and the material components. The lighting component is used to determine the direction and position of lights in the scene, whereas the material component is used to determine the way light is refelcted off of the specfiic object the material is applied to.</div>
+                                    <div>Lighting objects graphically required two major elements. The lighting component and the material components. The lighting component is used to determine the direction and position of lights in the scene, whereas the material component is used to determine the way light is refelcted off of the specfiic object the material is applied to. </div>
                                 </div>
                             </div>
                             <br>
