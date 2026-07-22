@@ -33,7 +33,7 @@
             <div class = "gridLayoutContainer">
                 <button onclick = "window.location.href='index.html'" class = "homeButton Hoverbutton" >Home</button>
                 <button onclick = "GoToSection('menu');if(screen.width < 980){ToggleSidebar();} " class = "topButton Hoverbutton">Top</button>
-                <button onclick = "GoToSection('Project1');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Escape The Labrynth</button>
+                <button onclick = "GoToSection('Project1');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Escape The Labyrinth</button>
                 <button onclick = "GoToSection('Project2');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Military Defence</button>
                 <button onclick = "GoToSection('Project3');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Orbit Simulation</button>
                 <button onclick = "GoToSection('Project4');if(screen.width < 980){ToggleSidebar();}" class = "menuButton Hoverbutton">Scroll To The Moon</button>
@@ -61,7 +61,7 @@
                         </a>
                     </div>
                         <a href = "https://github.com/dunkledan/Escape-The-Lab-Rythnth" target="_blank">
-                            <button class = "Project1Title">ESCAPE THE LABRYNTH</button>
+                            <button class = "Project1Title">ESCAPE THE LABYRINTH</button>
                         </a>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    <p>Escape the Labrynth is a 2D puzzle game written using the Unity Game Engine. The player is a shapeshifting character attempting to escape a laboratory. The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 specific mechanics and building on the previous levels with fairly simple puzzles and the final level combining all previous mechanics. </p>
+                    <p>Escape The Labyrinth is a 2D puzzle game written using the Unity Game Engine. The player is a shapeshifting character attempting to escape a laboratory.The game has 4 levels, with each of the first 3 focusing on introducing 1 or 2 specific mechanics which are used to solve fairly simple puzzles. Each level builds on the previous levels ones, with the final level combining all of the mechanics. </p>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses determines this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which is active and other relevant properties for that state. </div>
+                                                <div>The player has 3 shape states, stored in an animator component for smoother animations. This code accesses this state when the shapeshift input is pressed. Each state also has different abilities and this function handles which one is active and other relevant properties for that state. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -145,7 +145,7 @@
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The shooting mechanic works using a combination of 4 different classes: the player, bullet and lever class. The player handles an input to decide where to fire and which direction to fire a bullet instance. The bullet class handles its own life time and the lever class detects a bullet instance collision to open a given door using the door class to handle the properies of the door. </div>
+                                                <div>The shooting mechanic works using a combination of 4 different classes: the player, bullet, the door and lever class.The player class handles an input to decide where and in which direction to fire a bullet instance, while the bullet class handles its lifetimne. The lever class detects a bullet instance collision to open a given door using the door class to handle the properties of the door. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -184,7 +184,7 @@
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The climbing mechanic handles scene changes between different layers of a given level. This mechanic is used for interesting puzzles to avoid enemies or get to inaccessable sections of the game. This uses coroutine timers to determine climbing time and ensure the player does not move when climbing. The ladder class also sets the animator state machine to be in the climbing state when appropriate to handle animation and other properties of different states where appropriate. </div>
+                                                <div>The climbing mechanic handles scene changes between different layers of a given level. This mechanic is used to create interesting puzzles to avoid enemies or get to inaccesible sections of the game. This uses coroutine timers to determine climbing time and ensure the player does not move when climbing. The ladder class also sets the animator state machine to be in the climbing state when appropriate to handle animation and other properties of different states where appropriate. </div>
                                             </div>
                                         </div>
                                         <br>
@@ -221,7 +221,7 @@
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The enemy AI in this game uses a 2D nav mesh to determine paths that enemies can walk on. There are 3 different types of enemy in the game so far including the base enemy. These enemies include a patrol behaviour, a patrol and chase behaviour, and a patrol and shoot behaviour. The patrol and enemy classes are only able to see the player with line of sight in a radius, this is achieved using raycasting between the player and enemy to make sure the line of sight is appropriately used. The patrolling behaviour uses 2 target points for the enemy to patrol between which can be expanded for as many patrol points as required. 
+                                                <div>The enemy AI in this game uses a 2D nav mesh to determine paths that enemies can walk on. There are 3 different types of enemy in the game including the base enemy. These enemies include a patrol behaviour, a patrol and chase behaviour, and a patrol and shoot behaviour. Enemies are only able to see the player with line of sight in a defined radius. This is achieved using raycasting between the player and enemy to make sure the line of sight is appropriately used. The patrolling behaviour uses 2 target points for the enemy to patrol between which can be expanded for as many patrol points as required. 
 </div>
                                             </div>
                                         </div>
@@ -258,7 +258,7 @@
                                         <br>
                                         <div class =centre>
                                             <div class = "CodeDescriptionPara"  >
-                                                <div>The background tiles for this game are procedurally generated. This is done using unity rule tiles on a tile map and the perlin noise function with sample values to determine the specific tile that should be place at a given point. This was an interesting problem to solve as it was far more mathematical than most other mechanics for this project.</div>
+                                                <div>The background tiles for this game are procedurally generated. This is done using unity rule tiles on a tile map and the perlin noise function with sample values to determine the specific tile that should be place at a given point.<div>
                                             </div>
                                         </div>
                                         <br>
@@ -313,7 +313,7 @@
             <div class = "centre">
                 <div class = "DescriptionPara">
                     <h2>About</h2>
-                    Military Defence is a top down 3D tower defence game built using Unreal Engine 5. It was created using a framework provided by my university, originally with a goal of creating a level prototype, however I designed this game to be very expandable in a similar way to other tower defence games rather than being level focusd. This version features 3 rounds with unique enemies and a fairly well balanced scoring system to gain upgrades and towers. </div>
+                    Military Defence is a top down 3D tower defence game built using Unreal Engine 5. It was created using a framework provided by my university, with the goal of creating a simple level prototype.Rather than being level focused, I designed this game to be very expandable, with the potential to add more rounds in future, in a similar way to other tower defence games. </div>
             </div>
 
             <div class = "centre">
@@ -344,7 +344,7 @@
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Shooting functions using a combination of two major blueprints handling two different aspects of the shooting mechanic. The weapon controller blueprint for a given weapon creates an instance of a bullet blueprint class when appropriate with a velocity position and rotation dependant on where the player and thier mouse is. The projectile blueprint class itself handles its own audio, particles and lifespan and damage to other actors in the scene to create the bullet hitting effect. </div>
+                                            <div>Shooting functions using a combination of two major blueprints handling two different aspects of the shooting mechanic. The weapon controller blueprint for a given weapon creates an instance of a projectile blueprint class when appropriate with a velocity, position and rotation dependent on the position of the player and their mouse. The projectile blueprint handles its the projectile's audio, particles, lifespan and damage to other actors in the scene to create the projectile hitting effect. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -378,7 +378,7 @@
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>Tower placement was one of the most complex mechanics in the game, requiring interaction between UI elements, different world scene actors, the score system and appropriate mouse raycasting. The system works by spawning a new instance of the bought tower if the player has the correct amount of currency, at this point a new tower instance is continously kept on the mouse position on the nearest object on the screen until the left click button is pressed to place the tower, at which point the towers will begin to shoot at the closest enemy to them that is in range determined by a large trigger collision box. </div>
+                                            <div>Tower placement is one of the most complex mechanics in the game, requiring interaction between UI elements, different world scene actors, the score system and appropriate mouse raycasting.When the player purchases a tower, the system spawns a new instance of the tower, which is continuously kept on the mouse position on the nearest object on the screen until the left click button is pressed to place the tower, at which point the towers will begin to shoot at the closest enemy to them that is in range determined by a large trigger collision box. </div>
                                         </div>
                                     </div>
                                     <br>
@@ -466,7 +466,7 @@
                                     <br>
                                     <div class =centre>
                                         <div class = "CodeDescriptionPara"  >
-                                            <div>The health over time mechanics in Military defence involve blueprint class isntances that deal damage or heal the player in intervals using timers. These times and amount healed in that time is editable and is used for lava and a healing pool within the level. </div>
+                                            <div>The health over time mechanics in Military defence involve blueprint instances that deal damage or heal the player in intervals using timers. These times and amount healed in that time is editable and is used for lava and a healing pool within the level. </div>
                                         </div>
                                     </div>
                                     <br>
